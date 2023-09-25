@@ -1,0 +1,34 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    /* Con este código, te permite conseguir 10px=1rem */
+}
+
+h1{
+    color:white;
+    font-size: 4.5rem;
+    background-color: rgba(248, 102, 102, 0.65);
+    font-weight: 800;
+    padding: 35px;
+    color: #fff;
+    font-size: 47px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    box-sizing: border-box;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    line-height: 1.2;
+    text-align: left;
+}
+.login{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #F76666;
+    box-sizing: border-box;
+    text-align: right !important;
+}
+[src="img/Tu-carrera-digital-general.png"]{
+ padding: 0.5rem;   
+}

@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style> 
+        h1{/*selector*/
+            color: red; /*Propiedad y valor*/
+            background-color:yellow;
+
+        } Esto es para aplicar estilos dentro de la propia pagina de HTML, pero que solo se nos aplicará a esta página, no a ninguna otra
+    </style> -->
+
+    <link rel="preload" href="css/goodstyle.css" as="style">
+
+    <link href="css/goodstyle.css" rel="stylesheet">
+
     <title>Tu Carrera Digital</title>
 </head>
 
 <body>
     <!-- <h1>Hola Mundo!</h1> -->
     <!-- <h2>Hola mundo!</h2> -->
+<!-- <section class="Descendente">
+   <h3 class="primerh3">Aqui tenemos el primer h3</h3>
+   <h3 id="segundoh3">Aquí tenemos el segundo h3</h3>
+   <h6>Aqui tenemos el h6</h6>
+   <p>Aquí tenemos el párrafo</p>
+   <img src="img/ico-centro.png">
+   <section class="Enlaces">
+<a href="https://www.tucarreradigital.es/sobre-nosotros">Nosotros</a>
+<a href="https://www.tucarreradigital.es/zona-centro#cursos">Curso</a>
+<a href="https://www.tucarreradigital.es/">Carrera</a>
+
+   </section>
+    -->
     <header>
-        <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx">
+        <a class="login" href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginAlumno.aspx">
             Login Alumnos
         </a>
 
-        <a href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">
+        <a class="login" href="https://exp014_20_ed_lote5.iformalia.es/Publico/Portal/htmls/AdeccoRedEs/LoginEmpresa.aspx">
             Login Empresas
         </a>
 
@@ -43,13 +68,13 @@
 
     <section>
         <h3>
-            CURSOS
+            Cursos
         </h3>
         <h2>
-            CAMBIA TU FUTURO
+            Cambia tu futuro
         </h2>
         <a href="">
-            VER TODO
+            Ver todo
         </a>
         <a href="">
             MADRID
@@ -79,7 +104,7 @@
         <h3>
             ¿Te interesa algún otro curso en tu ciudad?
         </h3>
-        <a href="javascript:void(0)">
+        <a href="#">
             ¡PIDENOSLO!
         </a>
     <section>
