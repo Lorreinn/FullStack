@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}    
+/*Selector de elemento*/
+h1{
+    color:rgb(20, 157, 18);
+    text-transform: uppercase ;
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+/* Selector de clase */
+.h3class{
+    color:red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+}
+/* Selector de id */
+#pid{
+    color:aqua;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+/* Selector de atributo */
+[src="../Proyecto inicio/img/Logo-Adecco.png"]{
+    margin: 50rem;
+}
+/* Selector de cadena descendente */
+.seccion5{
+    color:pink;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+/* Selector de todos los hijos */
+.seccion6>h5{
+    color:yellow;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+/* Selector múltiple */
+.seccion7 h3, .seccion7 h6{
+    color:blueviolet;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}

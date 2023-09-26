@@ -1,34 +1,81 @@
+:root{
+    --colorPrimario: rgb(247 102 102);
+    --colorSecundario: rgba(248, 102, 102, 0.65);
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteBotones: "DinBold", sans-serif;
+
+
+}
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px;
     /* Con este código, te permite conseguir 10px=1rem */
+    font-family: var(--fuentePrincipal);
 }
 
 h1{
     color:white;
     font-size: 4.5rem;
-    background-color: rgba(248, 102, 102, 0.65);
+    background-color:var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
     font-weight: 800;
     padding: 35px;
-    color: #fff;
     font-size: 47px;
-    font-family: 'Open Sans', sans-serif;
     margin-top: 0;
     box-sizing: border-box;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     line-height: 1.2;
     text-align: left;
+    border-style: double;
+    
 }
+.vercursos{
+    color: #fff;
+    background-color: black;
+    border: 2rem solid #000;
+    border-radius: 0rem;
+    font-family: var(--fuenteBotones);
+    min-height: 5.0rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 2.4rem, 9.4rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .login{
+
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: #F76666;
-    box-sizing: border-box;
-    text-align: right !important;
+    font-size: 1.6rem;
+    color: var(--colorPrimario);
+    margin-left: 80rem;
 }
 [src="img/Tu-carrera-digital-general.png"]{
- padding: 0.5rem;   
+ margin-top: 10rem;
+ margin-right: 93rem;
+ text-align: center;   
+}
+
+.Logos{
+    text-align: center;
+}
+
+.Cursos h3{
+    text-align: center;
+    color:var(--colorPrimario);
+    font-size: 1.7rem;
+    font-family: var(--fuentePrincipal)
+}
+.Cursos{
+    text-align: center;
+}
+
+.imagenCarrera{
+    margin-left: 50rem;
+}
+.Formulario{
+    margin:2rem
 }
