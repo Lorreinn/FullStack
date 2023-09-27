@@ -16,10 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">  Esta es la manera de linkear una tipografia externa--> 
     <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Open+Sans&display=swap" rel="stylesheet">
     
     <link rel="preload" href="css/goodstyle.css" as="style">
     <link href="css/goodstyle.css" rel="stylesheet">
@@ -48,33 +44,43 @@
         </a>
     </header>
 
-    <main>
-        <h1>
-            Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
-        </h1>
-        <a class="vercursos" href="https://www.tucarreradigital.es/zona-centro#cursos">
-            Ver Cursos
-        </a>
-        <img src="img/ico-centro.png">
+<!--Banner del Main-->
+
+    <main class="fondoMain">
+
+        <div class="contenedor">
+            <div class="margenDerecho">          
+                <h1>Descubre la formación que te dará la oportunidad de convertirte en un profesional digital</h1>
+                <div class="flexMain">
+                    <img src="img/ico-centro.png">
+                    <a href="https://www.tucarreradigital.es/zona-centro#cursos">Ver Cursos</a>        
+                </div>    
+            </div>
+        </div>
+        
     </main>
 
-    <section class="Logos">
-        <img src="img/Logos-oficiales.png" alt="logos oficiales tu carrera digital"> <img src="img/Logo-Adecco.png">
+    <section class="contenedor">
+
+        <div class="logos">
+            <img src="img/Logos-oficiales.png" alt="logos oficiales tu carrera digital"> 
+            <img src="img/Logo-Adecco.png">
+        </div>  
+
     </section>
 
-    <section class="Cursos">
-        <h3>
-            Cursos
-        </h3>
-        <h2>
-            Cambia tu futuro
-        </h2>
-        <a href="" class="enlace">
-            Ver todo
-        </a>
-        <a href="">
-            MADRID
-        </a>
+    <section class="contenedor">
+
+        <div class="cambiaFuturo">
+            <h3>Cursos</h3>      
+            <h2>Cambia tu futuro</h2>
+        </div>    
+
+        <div class="alinearCentro">          
+            <a class="verTodo" href="#" class="enlace">Ver todo</a>              
+            <a class="Madrid" href="#">Madrid</a>              
+        </div>
+
         <h2 class="cursos">
             MARKETING DIGITAL						
         </h2>
@@ -134,18 +140,20 @@
         </a>
     </section>
 
-    <section>
-        <h2>
-            LOCALIZACIONES
-        </h2>
-        <h3>
-            MADRID
-        </h3>
-        <p>CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID.</p>
-        <h3>
-            MADRID
-        </h3>
-        <p>CALLE HOSPITAL 2 28012, MADRID, MADRID.</p>
+    <section class="localizaciones">
+        <div class="contenedor">
+            <h2>
+                Localizaciones
+            </h2>
+            <h3>
+                Madrid
+            </h3>
+            <p>CALLE DEL MARQUÉS DE AHUMADA 7 PLANTA BAJA AULA 15 28028, MADRID, MADRID.</p>
+            <h3>
+                Madrid
+            </h3>
+            <p>CALLE HOSPITAL 2 28012, MADRID, MADRID.</p>
+        </div>
     </section>
 
     <section>
@@ -153,7 +161,6 @@
             CONTACTAR
         </h3>
         <h2>¿TIENES DUDAS? HABLA CON NOSTROS:</h2>
-        <p>
         <img src="img/ico-TLF.png">
         <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -162,20 +169,17 @@
             <path d="M15 3a6 6 0 0 1 6 6"></path>
          </svg>  -->
          <!-- Copiando el svg y pegandolo directamente podemos poner iconos, que tienen mejor calidad que el png-->
-        LLÁMANOS:
+        <p>LLÁMANOS:</p>
             <a href="tel:638024408">638024408</a>
-        </p>
-        <p>
+        
         <img src="img/ico-EMAIL.png">
-        ESCRÍBENOS:
+        <p>ESCRÍBENOS:</p>
             <a href="patric.departearroyo@adecco.com">patric.departearroyo@adecco.com</a>
-        </p>
         
     </section>
 
     <footer>
     
-      
         <a class="zonas" href="#">
         CURSOS ZONA-CENTRO
         </a>
@@ -190,6 +194,7 @@
         <a href="https://www.tucarreradigital.es/zona-centro/aviso-legal"> Aviso Legal </a>
 
     </footer>
+
     <form class="Formulario">
         <fieldset>
             <legend>Titulo del formulario</legend>

@@ -11,10 +11,11 @@ html{
 }
 body{
     font-size: 16px;
-    /* Con este código, te permite conseguir 10px=1rem */
-    font-family: var(--fuentePrincipal);
-}
 
+    /* Con este código, te permite conseguir 10px=1rem */
+     font-family: var(--fuentePrincipal);
+}
+/*
 h1{
     color:white;
     font-size: 4.5rem;
@@ -78,4 +79,81 @@ h1{
 }
 .Formulario{
     margin:2rem
+} */
+.contenedor{
+    max-width: 75%;
+    margin: 0 auto;
+}
+/*ESTILOS PARA EL MAIN*/
+.fondoMain{
+    background-image: url(../img/11641893944_banner_zona_centro.png);
+    background-size: cover;
+    background-position: top left;
+    padding: 80px 0 180px 0;
+}
+.margenDerecho{
+    margin-right: 45%;
+}
+
+h1{
+    background-color: var(--colorSecundario);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    padding: 35px;
+    color: white
+}
+
+.fondoMain a{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 24px 94px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fuenteBotones);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+/*Hemos hecho un contenedor con la imagen y el enlace, lo hemos alineado con flex, que por default lo hace en row, y luego le hemos dicho que le de un espacio entre medias*/
+.flexMain{
+    display:flex;
+    flex-direction: row;/*Por defecto ya es row*/
+    justify-content: space-between;
+}
+/*ESTILO DE LOS LOGOS*/
+.logos{
+    background-color: white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: -120px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/*ESTILO CURSOS*/
+.cambiaFuturo h3{
+    text-align: center;
+    color: var(--colorPrimario);
+    font-weight: 800;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.7rem;
+    margin: 40px 0px
+}
+.cambiaFuturo h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    color: #02052F;
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 72px;
+
+}
+.alinearCentro {
+    display: flex;
+    justify-content:center;
+    
 }
