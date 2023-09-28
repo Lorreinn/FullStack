@@ -186,18 +186,102 @@ h1{
 .cursosOfertados{
     margin-bottom: 120px;
     display: flex;
-    justify-content: space-between;
 }
-.cursosOfertados div{
+.cursosOfertados>div{
     flex: 2;
-    margin: 20px;
+    max-width: 50%;
+    background-position: right !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;/*Le estamos dando una altura minima, si tenemos mas espacio, cogerá más, pero sino, no bajará*/
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.cursosOfertados h2{
+    color:white;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;    
+}
+.cursosOfertados a{
+    color:var(--colorPrimario);
+    font-size: 1.4rem;
+    font-family: var(--fuenteBotones);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid white;
+    padding: 20px 60px;
+    display: inline-block;
 }
 .marketing{
     background-image: url(../img/Curso-marketing-digital-centro.png);
-    min-height: 300px;
-    background-position: right !important;
-    
+    margin-right: 15px;  
+
 }
 .programacion{
     background-image: url(../img/Curso-programacion-videojuegos-centro.png);
+    margin-left: 15px;
+}
+/* ESTILO Acceso rápido a cuestionario*/
+.info{
+    /* text-align: center; No es bueno poner esto aquí, porque a un contenedor, le estamos dando una propiedad de un texto */
+    padding-bottom: 150px;
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.info h3{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #02052F;
+    line-height: 1.2;
+    margin:17px;
+
+}
+.info a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: var(--colorPrimario);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 96px;
+    margin: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+.info a:hover{ /*Solo pondremos las propiedades que varían cuando ponemos el raton encima del boton*/
+    background-color:#02052F;
+    text-decoration: underline;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    Justify-content: center;
+    align-items: center;
+}
+/*ESTILO VIDEO*/
+.video{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+    max-width: 100%;
+    width: 100%;
+    min-height: 1px;
+}
+.enlaceVideo{
+    padding-right: 15px;
+    padding-left: 15px;
+    
 }

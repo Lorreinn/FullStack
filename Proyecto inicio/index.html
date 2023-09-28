@@ -78,35 +78,40 @@
         </div>    
         <div>
             <div class="alinearCentro">          
-                <a class="verTodo" href="#" class="enlace">Ver todo</a>              
+                <a class="verTodo" href="#">Ver todo</a>              
                 <a class="Madrid" href="#">Madrid</a>              
             </div>
             <div class="cursosOfertados">
                 <div class="marketing">
-                    <h2>MARKETING DIGITAL</h2>
-                    <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">INSCRIBIRME</a>       
+                    <h2>Marketing Digital</h2>
+                    <div>
+                        <a href="https://www.tucarreradigital.es/zona-centro/curso-marketing-digital#cursos">INSCRIBIRME</a>
+                    </div>       
                 </div>
                 <div class="programacion">    
-                    <h2>PROGRAMACIÓN DE VIDEOJUEGOS, DISEÑO 3D Y REALIDAD VIRTUAL</h2>   
-                    <a href="https://www.tucarreradigital.es/zona-centro/curso-programacion-de-videojuegos-diseno-3d-y-realidad-virtual#cursos">INSCRIBIRME</a>       
+                    <h2>Programación de videojuegos, Diseño 3D y Realidad virtual</h2>
+                    <div>  
+                        <a href="https://www.tucarreradigital.es/zona-centro/curso-programacion-de-videojuegos-diseno-3d-y-realidad-virtual#cursos">INSCRIBIRME</a>
+                    </div>        
                 </div>
             </div>
         </div>
     </section>
 
 <!-- Acceso rápido a cuestionario -->
-    <section>
-        <h3>
-            ¿Te interesa algún otro curso en tu ciudad?
-        </h3>
-        <a href="#">
-            ¡PIDENOSLO!
-        </a>
+    <section class="contenedor">
+        <div class="info">
+            <h3>¿Te interesa algún otro curso en tu ciudad?</h3>
+            <a href="#">¡Pídenoslo!</a> <!--Metemos el enlace en un bloque div, de manera que así podemos utilizar el display flex sin que el boton abarque toda la pagina, solo el contenedor del enlace-->
+              
+        </div>
     </section> 
 
 <!-- Video informativo -->
-    <section>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SzZlMSDKE8o?si=rH4DZrV1TPINO0vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section class="video">
+        <div class="enlaceVideo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SzZlMSDKE8o?si=rH4DZrV1TPINO0vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <!-- Tambien se podría hacer con la etiqueta de <video src="url del video"></video> -->
     </section>
 
