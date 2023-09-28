@@ -134,6 +134,7 @@ h1{
 }
 
 /*ESTILO CURSOS*/
+
 .cambiaFuturo h3{
     text-align: center;
     color: var(--colorPrimario);
@@ -154,6 +155,49 @@ h1{
 }
 .alinearCentro {
     display: flex;
+    flex-direction: row;
     justify-content:center;
+    margin-bottom: 105px; 
+}
+.verTodo{
+    background-color: var(--colorPrimario);
+    border: 1px solid var(--colorPrimario);
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+    padding: 12px 24px;
+}
+.Madrid{
+    border: 1px solid var(--colorPrimario);
+    background-color: white;
+    color:#02052F;
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+.cursosOfertados{
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.cursosOfertados div{
+    flex: 2;
+    margin: 20px;
+}
+.marketing{
+    background-image: url(../img/Curso-marketing-digital-centro.png);
+    min-height: 300px;
+    background-position: right !important;
     
+}
+.programacion{
+    background-image: url(../img/Curso-programacion-videojuegos-centro.png);
 }
