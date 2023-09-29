@@ -1,0 +1,89 @@
+/* Diferencia entre cadena descendente y todoslos hijos */
+
+.selectorCadenadescendente h2{ /*En este caso la cadena descendente lo que haces es aplicar el estilo a todos los h2 que contiene la propia sección*/
+    background-color: blue;
+    height: 100px;
+}
+
+.selectorTodosloshijos>div>h2{ /*Con el selector de todos los hijos, solo aquellos elementos contenidos dentro del contenedor indicado, en este caso, dentro de la seccion, y a la vez, solo los div que contengan inmediatamente un h2*/
+    background-color: blue;
+    height: 100px;
+}
+
+/*Diferencia entre padding y margin*/
+.padding{
+    background-color: yellow;
+    height: 200px;
+    padding: 50px;
+}
+.margin{
+    background-color: yellow;
+    height: 200px;
+    margin: 50px;
+}
+body{
+    background-color: red;
+}
+
+.displayBlock p{
+    background-color: aqua;
+}
+.displayBlock a{
+    background-color: rgb(125, 142, 33);
+}
+.displayBlock h1{
+    background-color: rgb(255, 0, 247);
+}
+.displayBlock h3{
+    background-color: rgb(0, 255, 55);
+}
+.displayBlock h6{
+    background-color: rgb(255, 85, 0);
+}
+/*DISPLAY ALTERADO*/
+
+.displayBlock1 p{
+    background-color: aqua;
+    display:inline
+}
+.displayBlock1 a{
+    background-color: rgb(125, 142, 33);
+    display: block;
+}
+.displayBlock1 h1{
+    background-color: rgb(255, 0, 247);
+    display:inline
+}
+.displayBlock1 h3{
+    background-color: rgb(0, 255, 55);
+    display:inline
+}
+.displayBlock1 h6{
+    background-color: rgb(255, 85, 0);
+    display:inline
+}
+.displayBlock1>div{ /*Aunque estemos cambiando la naturaleza del parrafo, como el div tiene una naturaleza en block, para que nos haga caso, tenemos que cambiar también la naturaleza del div*/
+    background-color: rgb(59, 69, 0);
+    display:inline
+}
+/* <!-- UTILIZAR EL JUSTIFY-CONTENT Y ALIGN ITEMS --> */
+.FlexDirectionRow{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    
+}
+
+.FlexDirectionColumn{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    
+}
