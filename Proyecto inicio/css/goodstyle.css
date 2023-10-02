@@ -286,7 +286,7 @@ h1{
     
 }
  /*ESTILO DE SECCION ESCRITA, INFOGRAFÍA E IMAGEN INFORMATIVA*/
-
+/* ESTILO DE LA PARTE IZQUIERDA */
 .contenedorInfografia{
     min-height: 1px;
     padding-right: 15px;
@@ -296,9 +296,19 @@ h1{
     margin-bottom:100px;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.contenedorInfografia h3{
+.contenedorInfografia>div{
+    flex: 1;
+    max-width: 50%;   
+}
+.contenedorInfografia span{ /*Ponemos span cuando queremos destacar algo en concreto de una manera en concreto. Debe ponerse primero en el archivo HTML*/
+    font-weight: 800;  
+}
+.contenedorTexto{
+    display: inline-block;
+}
+.contenedorTexto h3{
     color:var(--colorPrimario);
     text-align: left;
     font-size: 1.7rem;
@@ -307,9 +317,8 @@ h1{
     line-height: 1.2;
     text-transform: uppercase;
 }
-.contenedorInfografia h2{
+.contenedorTexto h2{
     color:#02052F;
-    /* text-align: left; */
     font-size: 2.7rem;
     margin-bottom: 22px;
     font-weight: 800;
@@ -319,9 +328,11 @@ h1{
     font-size: 1.4rem;
     margin-bottom: 25px;
     font-weight: 400;
+    line-height: 1.5;
+    color:#02052F;
+    font-family: var(--fuentePrincipal);
 }
-.contenedorInfografia h4{
-    width: 80%;
+.contenedorTexto h4{
     margin-bottom: 10px;
     font-size: 1.5rem;
     margin-bottom: 22px;
@@ -329,15 +340,187 @@ h1{
     font-weight: 800;
     text-transform: uppercase;
 }
-.contenedorInfografia a{
-    color:var(--colorPrimario);
-    text-transform: uppercase;
-}
-.garantiajuvenillink{
-    display:flex;
+
+.garantiajuvenillink a{
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 50px;
-    display: block;
     text-decoration: underline;
+    color:var(--colorPrimario);
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+.descargarInfografia{
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.botondescargainfografia{
+    background: #F76666;
+    padding: 22px 40px;
+    border-color: #fff;
+    color: white;
+    border: 2px solid;
+    border-radius: 0px;
+    font-family: var(--fuenteBotones);
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.botondescargainfografia:hover{ /*Solo pondremos las propiedades que varían cuando ponemos el raton encima del boton*/
+    background-color:white;
+    color:var(--colorPrimario);
+    border-color: var(--colorPrimario);
+}
+
+/* ESTILO DE LA PARTE DERECHA DE LAS INFOGRAFIAS*/
+.paraQuienDerecha{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    padding-top: 60px;
+}
+.paraQuienDerSuperior{
+    background-color: var(--colorPrimario);
+    padding: 60px 30px;
+}
+.paraQuienDerSuperior h5{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.paraQuienDerSuperior .destacarAzul span{
+    color:#02052F;
+}
+.paraQuienDerSuperior span{
+    color:black;
+}
+.paraQuienDerInferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -60px;
+    margin-right: 30px;
+ 
+}
+.paraQuienDerInferior .texto{
+    background-color: black;
+    color: white;
+    max-width: 250px;
+    padding: 40px 30px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: var(--fuentePrincipal);
+}
+.paraQuienDerInferior h4 span{
+    color:var(--colorPrimario)
+}
+.paraQuienDerInferior .imagen{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+/*ESTILO LOCALIZACIONES*/
+.localizaciones{
+    background-color: black;
+    color: #fff;
+    padding: 100px 0px;
+}
+.localizaciones .contenedor{
+    display: flex;
+}
+.localizaciones .contenedor div{
+    width: 25%;
+    padding: 24px 10px;
+    color: white;
+    margin:0;
+}
+.localizaciones h2{
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 700px;
+    font-family: var(--fuentePrincipal);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+/*ESTILO DE LOS CONTACTOS*/
+.contactos{
+    background-color: var(--colorPrimario);
+    padding: 90px 0px 60px;
+}
+.contactos h3{
+    color:white;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: var(--fuentePrincipal);
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 22px;
+    line-height: 1.2;
+}
+.contactos h2{
+    color:white;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+.informacion{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #02052F;
+    font-weight: 700;   
+}
+.informacion a{
+    color: var(--colorPrimario);
+    font-size: 1.4rem;
+}
+.tlf{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex: 1;
+    max-width: 50%;
+    padding:20px;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+.email{
+    background-color: #fff;
+    border-radius: 0.55rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    max-width: 50%;
+    padding:20px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.informacion img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+/*ESTILOS ZONAS*/
+.foot{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.zonaContacto{
+    display: flex;
 }
