@@ -15,71 +15,7 @@ body{
     /* Con este código, te permite conseguir 10px=1rem */
      font-family: var(--fuentePrincipal);
 }
-/*
-h1{
-    color:white;
-    font-size: 4.5rem;
-    background-color:var(--colorSecundario);
-    font-family: var(--fuentePrincipal);
-    font-weight: 800;
-    padding: 35px;
-    font-size: 47px;
-    margin-top: 0;
-    box-sizing: border-box;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    line-height: 1.2;
-    text-align: left;
-    border-style: double;
-    
-}
-.vercursos{
-    color: #fff;
-    background-color: black;
-    border: 2rem solid #000;
-    border-radius: 0rem;
-    font-family: var(--fuenteBotones);
-    min-height: 5.0rem;
-    font-weight: 700;
-    font-size: 1.4rem;
-    padding: 2.4rem, 9.4rem;
-    text-decoration: none;
-    display: inline-block;
-}
 
-.login{
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-    color: var(--colorPrimario);
-    margin-left: 80rem;
-}
-[src="img/Tu-carrera-digital-general.png"]{
- margin-top: 10rem;
- margin-right: 93rem;
- text-align: center;   
-}
-
-.Logos{
-    text-align: center;
-}
-
-.Cursos h3{
-    text-align: center;
-    color:var(--colorPrimario);
-    font-size: 1.7rem;
-    font-family: var(--fuentePrincipal)
-}
-.Cursos{
-    text-align: center;
-}
-
-.imagenCarrera{
-    margin-left: 50rem;
-}
-.Formulario{
-    margin:2rem
-} */
 .contenedor{
     max-width: 75%;
     margin: 0 auto;
@@ -516,11 +452,113 @@ h1{
     margin-right: 10px;
 }
 
-/*ESTILOS ZONAS*/
-.foot{
-    padding-top: 50px;
-    padding-bottom: 40px;
+/*ESTILOS footer*/
+.seccionFooter{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
-.zonaContacto{
+
+.enlacesFooter{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+.enlacesFooter a{
+    font-family: var(--fuentePrincipal);
+    color:var(--colorSecundario);
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-right:80px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.paginasLegales{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.paginasLegales a{
+    font-family: var(--fuentePrincipal);
+    color:#02052F;
+    font-size: 1.7rem;
+    margin-right:80px;
+    line-height: 1.2;
+
+}
+
+/* ESTILOS HEADER  */
+
+.seccionHeader{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.seccionEnlaces {
+
+    display: flex;
+    flex-direction: column;
+}
+.seccionLogin{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccionLogin a{
+
+    color: var(--colorPrimario);
+    font-family: var(--fuentePrincipal);
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.seccionLogin a:hover{
+    text-decoration: underline;
+}
+
+
+.seccionNav a{
+    color:var(--colorPrimario);
+    font-family: var(--fuentePrincipal);
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.7rem;
+    display: inline-block;
+}
+
+.seccionNav a:hover{
+    text-decoration: underline;
+}
+
+.botonInformate{
+    background-color: var(--colorPrimario);
+    padding: 0.6rem 1.5rem;
+    border-radius: 4rem;
+    color: white !important;
+}
+
+.botonInformate:hover{
+    background-color:#02052F;
+    text-decoration: none !important;
+}
+
+.seccionImagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
