@@ -1,4 +1,4 @@
-:root{
+:root{/*Creación de variables para utilizarlas en CSS*/
     --colorPrimario: rgb(247 102 102);
     --colorSecundario: rgba(248, 102, 102, 0.65);
     --fuentePrincipal: 'Open Sans', sans-serif;
@@ -11,24 +11,57 @@ html{
 }
 body{
     font-size: 16px;
-
     /* Con este código, te permite conseguir 10px=1rem */
      font-family: var(--fuentePrincipal);
 }
 
-.contenedor{
+.contenedor{ /*Con este código código conseguimos que todas las secciones donde pongamos esta clase, se agruparán para que esté todo alineado*/
     max-width: 75%;
     margin: 0 auto;
 }
+/*Ajuste del contenedor a los diferentes tipos de pantallas, en este caso hemos cogido como referencia para pc, tablet y movil.
+PONEMOS SIEMPRE LAS MEDIAQUAREYS DESPUÉS DE LA CLASE GENÉRICA*/
+@media (min-width:1140px) { /*Este es el estilo para pc*/
+    .contenedor {
+        max-width: 88%;
+        /* margin-top:0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; */
+        /* margin: 0 auto 0 auto; */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1140px) and (min-width:768px) {/*El estilo para tablet, que lo hacemos con un condicional and*/
+    .contenedor{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px) {/*Y el estilo para móviles*/
+    .contenedor{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
 /*ESTILOS PARA EL MAIN*/
 .fondoMain{
     background-image: url(../img/11641893944_banner_zona_centro.png);
-    background-size: cover;
+    background-size: cover;/*Para que la imagen ocupe todo el espacio*/
     background-position: top left;
     padding: 80px 0 180px 0;
 }
 .margenDerecho{
     margin-right: 45%;
+}
+/*Las mediaquareys se ponen debajo de los selectores generales*/
+@media (max-width:1140px){
+    .margenDerecho{
+        margin-right: 0;
+    }
 }
 
 h1{
@@ -40,7 +73,9 @@ h1{
     padding: 35px;
     color: white
 }
-
+/* h1::after{ Pseudoelementos
+    content:"Texto con pseudoelementos";
+} */
 .fondoMain a{
     background-color: black;
     color: white;
@@ -52,12 +87,25 @@ h1{
     font-weight: 700;
     font-size: 1.4rem;
 }
+/*Esta mediaquarey la hacemos para que la letra VER CURSOS este en una sola linea, solo para la vista de móvil*/
+@media(max-width:768px){
+    .fondoMain a{
+        padding: 24px 70px;
+    }
+}
+
 /*Hemos hecho un contenedor con la imagen y el enlace, lo hemos alineado con flex, que por default lo hace en row, y luego le hemos dicho que le de un espacio entre medias*/
 .flexMain{
     display:flex;
     flex-direction: row;/*Por defecto ya es row*/
     justify-content: space-between;
 }
+
+/*Este estilo se pone para que en la visualización de móvil haya un pequeño hueco entre la imagen y el botón*/
+.flexMain img{
+    margin-right: 10px;
+}
+
 /*ESTILO DE LOS LOGOS*/
 .logos{
     background-color: white;
@@ -66,9 +114,30 @@ h1{
     align-items: center;
     margin-top: -90px;
     border-radius: 12px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+@media (max-width:1140px) and (min-width:768px){
+    [src="img/Logos-oficiales.png"]{
+        max-width: 70%;
+    }
+
+    [src="img/Logo-Adecco.png"]{
+        max-width: 30%;
+    }
+}
+@media (max-width:768px){
+    .logos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logos img{
+        max-width: 90%;
+        padding:20px
+    }
+}
 /*ESTILO CURSOS*/
 
 .cambiaFuturo h3{
@@ -136,6 +205,7 @@ h1{
     justify-content: space-between;
     
 }
+
 .cursosOfertados h2{
     color:white;
     font-family: var(--fuentePrincipal);
@@ -163,13 +233,35 @@ h1{
 .marketing{
     background-image: url(../img/Curso-marketing-digital-centro.png);
     margin-right: 15px;  
-
 }
 .programacion{
     background-image: url(../img/Curso-programacion-videojuegos-centro.png);
     margin-left: 15px;
 }
-/* ESTILO Acceso rápido a cuestionario*/
+/*RESTRICCION PARA TABLET PARA VER LOS CURSOS ALINEADOS*/
+@media (max-width:1140px){
+    .cursosOfertados>div{
+        padding:30px 30px;    
+    }
+}
+/*RESTRICCION PARA MOVIL PARA PONER UN CURSO DEBAJO DEL OTRO, Y ADEMÁS APLICARLE MARGENES PARA QUE QUEDEN ALINEADOS DEBIDO AL MARGEN QUE LE HEMOS DADO MAS ARRIBA PARA CREAR UN HUECO*/
+ @media(max-width:768px){
+    .cursosOfertados{
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; Le quitamos esa propiedad porque el titulo de marketing es mas pequeño y hace que el cuadrado sea mas chiko*/ 
+    }
+    .cursosOfertados>div{
+        /* margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        margin-top:15px; */
+        max-width:100%;
+        margin: 15px 0px 15px 0px
+    }
+} 
+
+/* ESTILO ACCESO RÁPIDO A CUESTIONARIO*/
 .info{
     /* text-align: center; No es bueno poner esto aquí, porque a un contenedor, le estamos dando una propiedad de un texto */
     padding-bottom: 150px;
@@ -214,13 +306,22 @@ h1{
     display:flex;
     justify-content: center;
     margin-bottom: 70px;
-    
-}
-.enlaceVideo{
     padding-right: 15px;
     padding-left: 15px;
-    
+       
 }
+@media(max-width:1140px){
+    .video iframe{
+        width:100%;
+        height:350px;
+    }
+} 
+ @media(max-width:768px){
+    .video iframe{
+        width:100%;
+        height:200px;
+    }
+} 
  /*ESTILO DE SECCION ESCRITA, INFOGRAFÍA E IMAGEN INFORMATIVA*/
 /* ESTILO DE LA PARTE IZQUIERDA */
 .contenedorInfografia{
@@ -234,9 +335,20 @@ h1{
     justify-content: space-between;
 
 }
+@media(max-width:1140px){
+    .contenedorInfografia{
+        flex-direction: column;
+    }
+}
 .contenedorInfografia>div{
     flex: 1;
     max-width: 50%;   
+}
+@media(max-width:1140px){
+    .contenedorInfografia>div{
+        flex:1;
+        max-width: 100%;
+    }
 }
 .contenedorInfografia span{ /*Ponemos span cuando queremos destacar algo en concreto de una manera en concreto. Debe ponerse primero en el archivo HTML*/
     font-weight: 800;  
@@ -371,14 +483,15 @@ h1{
     color: #fff;
     padding: 100px 0px;
 }
-.localizaciones .contenedor{
+.direcciones{
     display: flex;
+    justify-content: left;
 }
-.localizaciones .contenedor div{
-    width: 25%;
+.direcciones div{
+    max-width: 25%;
     padding: 24px 10px;
     color: white;
-    margin:0;
+    margin-right:15px;
 }
 .localizaciones h2{
     color: white;
@@ -387,6 +500,19 @@ h1{
     font-family: var(--fuentePrincipal);
     margin-bottom: 40px;
     text-transform: uppercase;
+}
+@media(max-width:1140px){
+    .direcciones div{
+    width: 50%;
+    }
+}
+@media(max-width:768px){
+    .localizaciones .contenedor {
+    flex-wrap: wrap;
+    }
+    .localizaciones .contenedor div{
+        width: 100%;
+    }
 }
 /*ESTILO DE LOS CONTACTOS*/
 .contactos{
@@ -424,10 +550,13 @@ h1{
     color: var(--colorPrimario);
     font-size: 1.4rem;
 }
+
 .tlf{
     background-color: #fff;
     border-radius: 0.5rem;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex: 1;
     max-width: 50%;
     padding:20px;
@@ -451,7 +580,22 @@ h1{
     width: 60px;
     margin-right: 10px;
 }
-
+@media(max-width:1140px){
+    .informacion{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .informacion div{
+        max-width: 100%;
+        margin: 10px 0px;
+    }
+}
+@media (max-width:768px){    
+    .informacion a{
+        font-size: 1.2rem;
+    }
+}
 /*ESTILOS footer*/
 .seccionFooter{
     display:flex;
@@ -499,21 +643,17 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-
 .seccionEnlaces {
-
     display: flex;
     flex-direction: column;
+    max-width: 55%;
 }
 .seccionLogin{
-
     display: flex;
     justify-content: flex-end;
 }
 
 .seccionLogin a{
-
     color: var(--colorPrimario);
     font-family: var(--fuentePrincipal);
     margin-left: 7px;
@@ -530,7 +670,7 @@ h1{
 
 
 .seccionNav a{
-    color:var(--colorPrimario);
+    color:#02052F;
     font-family: var(--fuentePrincipal);
     margin-left: 7px;
     margin-top: 10px;
@@ -561,4 +701,18 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    max-width: 45%;
+}
+.seccionImagen img{
+    max-width: 100%;
+}
+
+@media (max-width:768px){
+    .seccionHeader{
+        flex-direction: column;
+    }
+    .seccionImagen .seccionEnlaces{
+        max-width: 100%;
+        align-items: center;
+    }
 }

@@ -1,3 +1,4 @@
+
 /* Diferencia entre cadena descendente y todoslos hijos */
 
 .selectorCadenadescendente h2{ /*En este caso la cadena descendente lo que haces es aplicar el estilo a todos los h2 que contiene la propia sección*/
@@ -21,9 +22,9 @@
     height: 200px;
     margin: 50px;
 }
-body{
+/* body{
     background-color: red;
-}
+} */
 
 .displayBlock p{
     background-color: aqua;
@@ -86,4 +87,54 @@ body{
     justify-content: flex-start;
     align-items: end;
     
+}
+
+.ejercicioaquari{
+
+    height: 500px;
+    text-align: center;
+    border: 2px solid;
+}
+
+@media (max-width:350px) {
+
+    .ejercicioaquari { background-color: green;}
+}
+@media (max-width:616px) and (min-width: 350px) {
+
+    .ejercicioaquari { background-color: red;}
+}@media (max-width:933px) and (min-width: 616px)  {
+
+    .ejercicioaquari { background-color: blue;}
+}@media (max-width:1131px)and (min-width: 933px) {
+
+    .ejercicioaquari { background-color: yellow;}
+}
+
+/*EJERCICIO CON RELATIVE Y ABSOLUTE*/
+.ejercicioAR{
+    height: 500px;
+    background-color: blue;
+    position: relative;
+    /* background-image: linear-gradient(to top, red 0%, blue 50%); */
+    background: rgba(235,233,249,1);
+background: -moz-linear-gradient(-45deg, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 28%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(235,233,249,1)), color-stop(28%, rgba(216,208,239,1)), color-stop(51%, rgba(206,199,236,1)), color-stop(100%, rgba(193,191,234,1)));
+background: -webkit-linear-gradient(-45deg, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 28%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 28%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 28%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+background: linear-gradient(135deg, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 28%, rgba(206,199,236,1) 51%, rgba(193,191,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1 );
+}
+.ejercicioAR div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+    -webkit-box-shadow: 24px -31px 27px 0px rgba(0,0,0,0.54);
+-moz-box-shadow: 24px -31px 27px 0px rgba(0,0,0,0.54);
+box-shadow: 24px -31px 27px 0px rgba(0,0,0,0.54);
+
 }
