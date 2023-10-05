@@ -136,5 +136,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', end
     -webkit-box-shadow: 24px -31px 27px 0px rgba(0,0,0,0.54);
 -moz-box-shadow: 24px -31px 27px 0px rgba(0,0,0,0.54);
 box-shadow: 24px -31px 27px 0px rgba(0,0,0,0.54);
+}
 
+/*EJERCICIO GRID*/
+.ejercicioGrid div{
+    border: 1px solid black;
+}
+.ejercicioGrid{
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 200px 100px;
+}
+/*EJERCICIO GRID2*/
+.ejercicioGrid2 div{
+    border: 1px solid black; 
+}
+/* .ejercicioGrid2{
+    display: grid;
+    grid-template-columns: 80% 100px;
+    grid-template-rows: 50px 300px 100px 200px;
+} */
+.ejercicioGrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*Es lo mismo que poner 50% y 50%*/
+    grid-template-rows: 50px 300px 100px 200px;
+}
+
+.ejercicioGridfr div{
+    border: 1px solid rgb(255, 0, 0)
+}
+.ejercicioGridfr{
+    display:grid;
+    grid-template-columns:100fr 300fr 200fr 150fr;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+    height:500px
+}
+
+.ejercicioRepeat{
+    display:grid;
+    /* grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr; */
+    height: 300px;
+    grid: 1fr 1fr/2fr 2fr; /*Primero coge filas y luego columnas*/
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    gap: 20px 20px;
+}
+.ejercicioRepeat div{
+    border: 1px solid rgb(255, 0, 0)
 }

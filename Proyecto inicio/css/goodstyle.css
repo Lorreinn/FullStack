@@ -100,7 +100,12 @@ h1{
     flex-direction: row;/*Por defecto ya es row*/
     justify-content: space-between;
 }
+.flexMain a:hover{
+    background-color: white;
+    border-color: var(--colorPrimario);
+    color: var(--colorPrimario);
 
+}
 /*Este estilo se pone para que en la visualización de móvil haya un pequeño hueco entre la imagen y el botón*/
 .flexMain img{
     margin-right: 10px;
@@ -439,7 +444,7 @@ h1{
 }
 .paraQuienDerSuperior h5{
     font-family: var(--fuentePrincipal);
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 800;
     margin-top: 0;
     margin-bottom: 10px;
@@ -457,7 +462,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     margin-top: -60px;
-    margin-right: 30px;
+    margin-right: 40px;
  
 }
 .paraQuienDerInferior .texto{
@@ -477,21 +482,24 @@ h1{
     height: 40px;
     width: 40px;
 }
-/*ESTILO LOCALIZACIONES*/
+
+/* ESTILO LOCALIZACIONES*/
 .localizaciones{
     background-color: black;
     color: #fff;
     padding: 100px 0px;
 }
 .direcciones{
-    display: flex;
-    justify-content: left;
+    /* display: flex;
+    justify-content: left; */
+    display:grid;
+    grid:1fr/repeat(4,1fr);
 }
 .direcciones div{
-    max-width: 25%;
-    padding: 24px 10px;
+    /* max-width: 25%; */
+    padding: 24px 0px;
     color: white;
-    margin-right:15px;
+    margin: 0;
 }
 .localizaciones h2{
     color: white;
@@ -514,6 +522,7 @@ h1{
         width: 100%;
     }
 }
+
 /*ESTILO DE LOS CONTACTOS*/
 .contactos{
     background-color: var(--colorPrimario);
@@ -549,6 +558,11 @@ h1{
 .informacion a{
     color: var(--colorPrimario);
     font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.informacion a:hover{
+    text-decoration: underline;
 }
 
 .tlf{
@@ -611,7 +625,7 @@ h1{
 
 .enlacesFooter a{
     font-family: var(--fuentePrincipal);
-    color:var(--colorSecundario);
+    color:#02052F;
     font-size: 1.7rem;
     font-weight: 800;
     margin-right:80px;
@@ -634,6 +648,11 @@ h1{
 
 }
 
+@media(max-width:1140px){
+    .seccionFooter{
+        flex-wrap: wrap;
+    }
+}
 /* ESTILOS HEADER  */
 
 .seccionHeader{
@@ -711,7 +730,7 @@ h1{
     .seccionHeader{
         flex-direction: column;
     }
-    .seccionImagen .seccionEnlaces{
+    .seccionImagen, .seccionEnlaces{
         max-width: 100%;
         align-items: center;
     }
