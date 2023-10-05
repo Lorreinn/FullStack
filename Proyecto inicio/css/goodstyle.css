@@ -13,6 +13,7 @@ body{
     font-size: 16px;
     /* Con este código, te permite conseguir 10px=1rem */
      font-family: var(--fuentePrincipal);
+     background-color: red;
 }
 
 .contenedor{ /*Con este código código conseguimos que todas las secciones donde pongamos esta clase, se agruparán para que esté todo alineado*/
