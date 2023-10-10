@@ -3,12 +3,13 @@
    --colorDorado: #dac687;
    --colorOcre: #924225;
    --colorBlanco: #ede2da;
-
-
+/*Buscar fuentes que nos gusten*/
 
 }
-
-.h1{
+body{
+    background-color: #ede2da;
+}
+h1{
     background-color: #1e42ae;
     color:#924225;
 }
