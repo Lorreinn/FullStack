@@ -1,0 +1,14 @@
+.root{
+   --colorNegro:#1e1f22;
+   --colorDorado: #dac687;
+   --colorOcre: #924225;
+   --colorBlanco: #ede2da;
+
+
+
+}
+
+.h1{
+    background-color: #1e42ae;
+    color:#924225;
+}
