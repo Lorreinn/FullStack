@@ -1,18 +1,24 @@
-.root{
+:root{
    --colorNegro:#1e1f22;
    --colorDorado: #dac687;
    --colorOcre: #924225;
    --colorBlanco: #ede2da;
+   --fuentePrincipal:'Cinzel Decorative', serif;
 /*Buscar fuentes que nos gusten*/
 
 }
+
 body{
-    background-color: #ede2da;
+    background-color: var(--colorBlanco);
 }
+
 h1{
     background-color: #1e42ae;
-    color:#924225;
+    color: black;
+    font-family: var(--fuentePrincipal);
+
 }
+
 .h2{
     color: aqua;
 }
