@@ -22,3 +22,22 @@ h1{
 .h2{
     color: aqua;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILO  APARTADO RESEÑAS ¡¡¡PRUEBA!!*/
+.resenas>img{
+    max-height: 500px;
+}
