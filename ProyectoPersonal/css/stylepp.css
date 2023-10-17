@@ -4,12 +4,15 @@
    --colorOcre: #924225;
    --colorBlanco: #ede2da;
    --fuentePrincipal:'Cinzel Decorative', serif;
-/*Buscar fuentes que nos gusten*/
-
-}
+/*Buscar fuentes que nos gusten*/}
 
 body{
     background-color: var(--colorBlanco);
+}
+
+.contenedor {
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 h1{
@@ -23,7 +26,45 @@ h1{
     color: aqua;
 }
 
+.navegador{
+    
+    background-color: #1e1f22;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    /* margin-top: 40px; */
+    margin-bottom: 80px;
+}
 
+.carta {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.carta a{
+    color: var(--colorBlanco);
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+}
+
+.navegador img {
+    height: 120px;
+    width: 120px;
+}
+
+.horario{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+   
+}
+
+.horario a{
+    font-family: var(--fuentePrincipal);
+    color: var(--colorBlanco);
+    text-decoration: none;
+}
 
 
 
