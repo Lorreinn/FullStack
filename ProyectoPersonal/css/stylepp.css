@@ -26,6 +26,9 @@ h1{
     color: aqua;
 }
 
+
+/*ESTILO DEL NAVEGADOR-HEADER*/
+
 .navegador{
     
     background-color: #1e1f22;
@@ -69,16 +72,15 @@ h1{
 
 
 
+/*ESTILO  APARTADO RESEÑAS*/
+.resena1{/*Si alineo la imagen con el texto, la imagen se deforma*/
+    display: flex; 
+    align-items: center;
+    gap: 80px; 
 
-
-
-
-
-
-
-
-
-/*ESTILO  APARTADO RESEÑAS ¡¡¡PRUEBA!!*/
-.resenas>img{
-    max-height: 500px;
+}
+.resenas img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
