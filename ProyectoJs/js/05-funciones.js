@@ -98,8 +98,13 @@ COLOR
 Y MUESTRE POR PANTALLA
  
 EL COLOR ELEGIDO ES:...
- 
- 
+*/
+function dimeUncolor(color){
+    return console.log(`El color elegido es ${color}`);
+};
+
+dimeUncolor("amarillo")
+/*
 !!!!!!!!!!!!
 EJERCICIO
  
@@ -199,32 +204,6 @@ ecuacionSegundo(2, 10);
 
 
 
-// FUNCIONEN QUE RETORNAN VALORES
-
-function multiplicar(n1, n2) {
-    return n1 * n2; // ME RETORNA UN VALOR
-}
-
-let valorRetornado = multiplicar(2, 5);
-console.log("EL VALOR RETORNADO ES:", valorRetornado);
-
-
-//OTRA FUNCIÓN UN POCO MAS COMPLEJA
-
-let total = 0;
-
-function agregarCarrito(precio) {
-    return total += precio;
-}
-
-total = agregarCarrito(200);
-total = agregarCarrito(500);
-total = agregarCarrito(600);
-
-console.log("EL TOTAL A PAGAR ES DE:", total)
-
-
-
 
 
 /*
@@ -235,29 +214,193 @@ PRODUCTOS ANTERIORES UNO A UNO Y LOS SUME
 */
 
 
-let impuesto=0;
-let IVA=21;
 
-function calcularImpuesto(precio=0){
-    return impuesto+=(precio*IVA/100)
+//FUNCIONES QUE RETORNAN VALORES
+function multiplicar(x,y){ //Declaración de la función
+    
+    return x*y;
+}
+let resultadoMultiplicar = multiplicar(2,3);
+console.log(resultadoMultiplicar);
+
+//OTRA FUNCION MÁS COMPLEJA
+let totalCarrito = 0;
+function agregarCarrito(x){
+    totalCarrito+=x; //Aqui lo que queremos es que esta función sea llamada cada vez que se añada un producto al carrito, y lo sume
+
+}
+agregarCarrito(50);
+agregarCarrito(20);
+agregarCarrito(10);
+console.log(totalCarrito);
+
+//EJERCICIO 
+let descuento = 0.2,
+    totalAhorro = 0; //Aqui vamos a ir sumando el ahorro de todos los productos que vamos añadiendo al carrito
+
+function calcularDescuento (z){ //Esta función lo que hace es que a cada producto añadido al carrito(z) se multiplica por el descuento(0.2) y se va a ir sumando y almacenando en totalahorro.
+    return totalAhorro+=(z*descuento);
+
+}
+calcularDescuento(100);
+calcularDescuento(120);
+calcularDescuento(350);
+
+console.log(totalAhorro);
+//Un método no deja de ser un objeto de funciones
+let reproductor = {
+    reproducir: function(x){
+        console.log("Reproduciendo canción con ID: ", x);
+        
+    },
+    pausar: function(){
+        console.log("Pausando canción...")
+    },
+    crearPlaylist: function(nombre){
+        console.log(`Creando Playlist: ${nombre}`)
+    }
 }
 
-impuesto = calcularImpuesto(200);
-impuesto = calcularImpuesto(500);
-impuesto = calcularImpuesto(600);
-
-console.log("EL TOTAL DE IMPUESTOS A PAGAR ES DE:",impuesto)
-
-
-
-let totalConImpuestos = 0;
-
-function sumarImpuestos(precio, impuesto) {
-    return totalConImpuestos += precio * (1+impuesto / 100)
+reproductor.reproducir(17); //Hemos creado un método a partir de una función dentro de las propiedades de un objeto
+reproductor.crearPlaylist("Lista de pop");
+reproductor.borrarCancion = function(x){  //Creamos una nueva propiedad, que es una función, en este caso, una que borra la canción que nosotros le demos.
+    console.log(`Borrando la canción con id ${x}`);
+};
+reproductor.borrarCancion(8);
+//Ejercicio con expresión de funciones
+let triplicar = function(x){
+    return x*3;
 }
+ console.log(triplicar(6));
 
-sumarImpuestos(200, 10);
-sumarImpuestos(300, 21);
-sumarImpuestos(500, 5);
+ //Funciones de flecha
+//  let triplicar2 = function(x){   ESTA ES LA FUNCION GENERAL
+//     return 3*x;
+//  }
+ //Para convertir a expresión de flecha
+ let triplicar2 = x=>3*x;//Si solo tenemos una linea de código en el cuerpo de la función, la llaves se quitan; si solo tenemos un argumento y NO esta inicializado, los parentesis se van, la palabra reservada función se va, y el return también, solo lo puedes dejar, si se dejan las llaves
+let resultadoAprendiendo;
+ let aprendiendo = numero=> resultadoAprendiendo = numero+7; //Esto es una función que devuleve un numero cualquiera(argumento) +7, el cual el resultado se almacena en una variable.
+console.log(aprendiendo(7));
 
-console.log("EL TOTAL CON IMPUESTOS ES DE:", totalConImpuestos)
+// ESTO ES DE ARRAYS: INCLUDE PARA ARREGLO PLANO
+
+let carrito = [
+        {
+            nombre: "TV",
+            precio: 750
+        },
+        {
+            nombre: "Tablet",
+            precio: 350
+        },
+        {
+            nombre: "Movil",
+            precio: 550
+        },
+        {
+            nombre: "PC",
+            precio: 1750
+        }
+    ];
+    
+let resultado;
+
+// resultado = meses.includes("mayo"); //Busca si dentro de un array existe el valor que buscamos.
+// console.log("USO DE INCLUDES PARA BUSCAR EN ARRAY PLANO", resultado); 
+// NO PODEMOS UTILIZARLO PARA ARREGLO DE OBJETOS
+
+// SOME IDEAL PARA ARREGLO DE OBJETOS
+
+resultado = carrito.some(function (producto) {
+    return producto.nombre === "Tablet" //ME DEVOLVERÁ TRUE/FALSE
+});
+
+console.log("RESULTADO DE FUNCION SOME IDEAL", resultado);
+
+// COMO SABER EL TOTAL DEL CARRITO. REDUCE
+
+resultado = carrito.reduce(function (total=0, producto) { // PARA ITERAR
+    // TOTAL, PRODUCTO SON LOS PARAMETROS DE LA FUNCION
+    return total + producto.precio
+},0); // EL VALOR DONDE INICIA
+console.log("USO DE REDUCE", resultado);
+
+// FILTER, PARA FILTRAR
+// EL MÁS UTILIZADO
+
+resultado = carrito.filter(function (X) {
+    return X.precio <= 1
+});
+console.log("USO DE FILTER", resultado);
+
+
+// let resultado2;
+// resultado2 = carrito.some(function(producto){
+//     return producto.nombre === "Tablet"
+
+// })
+let resultado2 //Declaramos primero la variable
+resultado2 = carrito.some(producto=>producto.nombre==="Tablet");
+console.log(resultado2)
+
+resultado2 = carrito.reduce((total=0, producto)=>total+producto.precio, 0); //Te combina todas las propiedades de todos los objetos, en este caso las suma, y con ese 0, haces que empiece el contador en 0
+console.log(resultado2)
+
+resultado2 = carrito.filter(producto=>producto.precio>400); //Muestra por pantalla todas las propiedades precio, que esta dentro del array que cumplen la condición de estar por encima de 400
+console.log(resultado2);
+
+//EJERCICIO Declarar la misma función de tres maneras diferentes.
+
+//Tipo declaración
+function sumarDeclaracion(x,y,z){
+    return console.log(x+y+z);
+};
+sumarDeclaracion(5,8,7);
+
+//Tipo expresión
+let sumarExpresion = function(x,y,z){
+    return x+y+z;
+};
+console.log(sumarExpresion(5,8,7));
+
+//Tipo Flecha
+let sumarFlecha = (x,y,z)=> console.log(x+y+z);
+sumarFlecha(5,8,7);
+
+//Ejercicio
+let arrayNumeros=[87, 99, 43, 23];
+//Funcion de declaración
+function buscararray(x){
+    return console.log(arrayNumeros.includes(x));
+};
+
+buscararray(87);
+//Funcion de expresion
+let buscararray1 = function(x){
+    return console.log(arrayNumeros.includes(x));
+}
+buscararray1(5);
+//Funcion de flecha
+let buscararray2 = x=> arrayNumeros.includes(x);
+console.log(buscararray2(87));
+
+//Ejercicio
+
+let multiplicacionFlecha = (x,y)=> (x+y)*10;
+
+console.log(`El resultado de esta operación es ${multiplicacionFlecha(2,4)}`);
+
+//Ejercicio
+let contarTotal;
+let contarCaracteres = (texto1, texto2)=> (texto1.length)+(texto2.length);
+console.log(contarCaracteres("hola", "adios"))
+//ejercicio
+let arrayDeleteable = ["Helo", 7, true, "Adios"];
+let quitarArray = arr=>arr.pop();
+console.log(quitarArray(arrayDeleteable));
+console.log(quitarArray(arrayDeleteable));
+
+
+
+
