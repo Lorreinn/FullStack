@@ -73,14 +73,37 @@ h1{
 
 
 /*ESTILO  APARTADO RESEÑAS*/
-.resena1{/*Si alineo la imagen con el texto, la imagen se deforma*/
-    display: flex; 
-    align-items: center;
-    gap: 80px; 
+.resenas{
+    display:grid;
+    grid: repeat(4,1fr)/1fr;
+}
+.resena1{
+    display: grid; 
+    grid:1fr/repeat(4,1fr);
+    margin: 20px;
+    
+}
+.resena1 h2{
+    grid-column: 2/5;
+    display:flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+.imgresena1{
+    background-image: url(../img/face-review.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-position: center;
 
 }
-.resenas img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+
+/* ESTILO RRSS */
+.rrss{
+    display:flex;
+    justify-content: right;
+}
+.rrss a{
+    color: var(--colorNegro);
 }
