@@ -8,9 +8,13 @@
 
 /*Buscar fuentes que nos gusten*/
 }
+html{
+    font-size: 62.5%;
+}
 
 body{
     background-color: var(--colorBlanco);
+    font-size: 16px;
 }
 
 .contenedor {
@@ -74,7 +78,7 @@ body{
 
 
 /* ESTILO DEL CARROUSEL DE IMAGENES ¡¡MAIN!! */
-/* .carrousel {
+.carrousel {
     width: 500px;
     overflow: hidden;
     height: 500px;
@@ -89,14 +93,17 @@ body{
 
 .carrousel img:first-child {
     display: block;
-} */
+}
 
 
 /*ESTILO  APARTADO RESEÑAS*/
 .resenas{
     display:grid;
     grid: repeat(4,1fr)/1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+    /* ESTILO DE LA PRIMERA RESEÑA */
 .resena1{
     display: grid; 
     grid:1fr/repeat(4,1fr);
@@ -114,65 +121,149 @@ body{
     background-image: url(../img/face-review.jpeg);
     background-size:cover;
     border-radius: 80%;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     background-position: center;
     background-repeat: no-repeat;
-    border-style: solid;
     
+}
+    /* ESTILO DE LA SEGUNDA RESEÑA */
+.resena2{
+    display: grid; 
+    grid:1fr/repeat(4,1fr);
+    margin: 20px;
+
+}
+.resena2 h2{
+    grid-column: 2/5;
+    display:flex;
+    justify-content: left;
+    padding-left: 20px;
+    align-items: center;
 }
 .imgresena2{
     background-image: url(../img/face-review1.jpeg);
     background-size:cover;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     background-position: center;
     background-repeat: no-repeat;
 }
-
+    /* ESTILO DE LA TERCERA RESEÑA */
+.resena3{
+    display: grid; 
+    grid:1fr/repeat(4,1fr);
+    margin: 20px;
+    
+}
+.resena3 h2{
+    grid-column: 2/5;
+    display:flex;
+    justify-content: left;
+    padding-left: 20px;
+    align-items: center;
+}
 .imgresena3{
     background-image: url(../img/face-review2.jpeg);
     background-size:cover;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     background-position: center;
     background-repeat: no-repeat;
 
 }
-
+    /* ESTILO DE LA CUARTA RESEÑA */
+.resena4{
+    display: grid; 
+    grid:1fr/repeat(4,1fr);
+    margin: 20px;
+        
+}
+.resena4 h2{
+    grid-column: 2/5;
+    display:flex;
+    justify-content: left;
+    padding-left: 20px;
+    align-items: center;
+}    
 .imgresena4{
     background-image: url(../img/face-review3.jpeg);
     background-size:cover;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* ESTILO LOCALIZACIONES */
+
+
+.iconoLocalizacion{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+ 
+}
+#localizaciones{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: var(--fuenteSecundaria);
+    
+}
+.calles{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+    font-family: var(--fuenteSecundaria);
+    
+}
+
+.chamberi:hover, .lavapies:hover, .malasaña:hover{
+    color: var(--colorOcre);
+    text-decoration: underline;
+}
+
+
+
+
 
 /* ESTILO RRSS Y CONTACTOS */
     /* ESTILO DE LA BARRA SUPERIOR DEL CONTENEDOR */ 
 .rrss{
     border-top: 5px ridge var(--colorOcre);
-    height: 100px;
+    /* height: 200px; */
+    margin-bottom: 30px;
+    
 
 }
     /* DIVISION DEL CONTENEDOR PARA POSTERIORMENTE PONER LOS APARTADOS */
 .contenedorRRSS{
     display: grid;
     grid: repeat(4,1fr)/repeat(2,1fr);
+    
+    
 }
     /* COLOCACION DE EL APARTADO DE CONTACTO */
 .contenedorRRSS h2{
     font-family: var(--fuenteSecundaria);
     color:var(--colorNegro); 
     text-transform: uppercase;
+    font-size: 25px;
 }
+
+/* ESTILO DE LOS TELEFONOS Y EL EMAIL */
 .contenedorRRSS>a{
     color:var(--colorNegro);
     text-decoration: none;
+    font-family: var(--fuenteSecundaria);
+    font-size:25px;
+    font-weight: 600px;
+    display:flex;
+    justify-content: left;
 }
 .tlf1{
     grid-row: 2/5;
@@ -186,25 +277,33 @@ body{
     grid-row: 4/5;
     grid-column: 1/2;
 }
+.email{
+    grid-row: 5/5;
+    grid-column: 1/2;
+}
     /* COLOCACION DEL APARTADO DE RRSS Y ESTILO*/
 .contenedorRRSS h3{
     display: flex;
     justify-content: right;
     align-items: center;
     grid-column: 2/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
     padding-right: 77px;
-    font-size: 24px;
+    font-size: 25px;
     color:var(--colorNegro);
     font-family: var(--fuenteSecundaria);
     text-transform: uppercase;
+}
+.tlf1:hover, .tlf2:hover, .tlf3:hover, .email:hover{
+    color:var(--colorOcre);
+    text-decoration: underline;
 }
     /* COLOCACIÓN DE LOS ICONOS DE LAS RRSS */
 .iconos{
     display: flex;
     justify-content: right;
     align-items: center;
-    grid-row: 2/2;
+    grid-row: 3/4;
     grid-column: 2/2;
 }
         /* ESTILO DE LOS ICONOS */
