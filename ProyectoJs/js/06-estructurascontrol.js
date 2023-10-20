@@ -146,16 +146,140 @@ multiplo(10);
 
 //EJERCICIO SWITCH compare si un numero al sumarle 10 es = 9, 12, 15, 100 y meterlo por prompt
 
-let numerosPorteclado = parseInt(prompt("Introduzca aquí un numero: "));
-switch(numerosPorteclado+10){
-    case 9: console.log("El numero introducido +10 es igual a 9");
-        break;
-    case 12: console.log("El numero introducido +10 es igual a 12");
-        break;
-    case 15: console.log("El numero introducido +10 es igual a 15");
-        break;  
-    case 100: console.log("El numero introducido +10 es igual a 100");
-        break; 
-    default: console.log("El numero introducido +10 no coincide con ninguno de los anteriores");    
-        break;     
+// let numerosPorteclado = parseInt(prompt("Introduzca aquí un numero: "));
+// switch(numerosPorteclado+10){
+//     case 9: console.log("El numero introducido +10 es igual a 9");
+//         break;
+//     case 12: console.log("El numero introducido +10 es igual a 12");
+//         break;
+//     case 15: console.log("El numero introducido +10 es igual a 15");
+//         break;  
+//     case 100: console.log("El numero introducido +10 es igual a 100");
+//         break; 
+//     default: console.log("El numero introducido +10 no coincide con ninguno de los anteriores");    
+//         break;     
+// };
+ //ITERADORES O BUCLES FOR, WHILE Y DO WHILE
+
+ // BUCLE FOR
+for(let i=0;i<=3; i++){ //En este codigo tenemos 3 partes, la primera que el indice, la segunda que es la condición que debe cumplir para seguir en el bucle y la tercera que es el actualizador
+    console.log(i+1); //En el cuerpo de la función queremos que nos imprima desde el numero 1 al 4
+}
+
+//Ejercicio Mostrar por pantalla del 100 al 200
+
+for(let i=100;i<=200;i++){
+    console.log(i);
+}
+
+//EJERCICIO MOSTRAR LOS NUMEROS DEL 2 AL 49, SOLO LOS PARES
+for(let i = 2;i<50;i+=2){   
+    console.log(i)
+}
+
+//EJERCICIO MOSTRAR DEL NUMERO 100 AL 0, DE 5 EN 5
+for(let i=100;i>=0;i-=5){
+    console.log(`Los numeros del 100 al 0 de 5 son ${i}`);
+}
+
+//MOSTRAT DEL 1 AL 20 TODOS LOS NUMEROS PARES, AMBOS INCLUIDOS
+for(let i=1;i<21;i++){
+    if (i%2===0){
+        console.log(i)
+    }
+}
+
+//EJERCICIO 
+let arrayNumeros=[1,2,3,4,5,6,7,8,9];
+for(let i=0;i<arrayNumeros.length;i++){
+    console.log(arrayNumeros[i]);
 };
+
+//EJERCICIO RECORRER EL ARRAY Y MOSTRAR CADA UNO DE LOS OBJETOS
+let carrito = [
+    {
+        nombre: "TV",
+        precio: 750
+    },
+    {
+        nombre: "Tablet",
+        precio: 350
+    },
+    {
+        nombre: "Movil",
+        precio: 550
+    },
+    {
+        nombre: "PC",
+        precio: 1750
+    }
+];
+
+for(let i=0;i<carrito.length;i++){
+    console.log(carrito[i]);
+    console.log(carrito[i].nombre);
+}
+
+//WHILE
+let i = 0;//Esta variable es global ya que está fuera del bucle;este es el indice
+while(i<100){//Aqui va la condición del bucle
+    console.log(i); //Aqui está lo que quieres que haga el bucle, en este caso, printear la 1
+    i++  //Aqui esta el contador
+};
+
+//DO WHILE AUNQUE LA CONDICIÓN NO SE CUMPLA, EL DO WHILE SE EJECUTA AL MENOS UNA VEZ
+let j=0; //el indice
+do{
+    console.log(j);//cuerpo del bucle y el contador
+    j++;
+}    while(j<=50); //condición
+
+//EJERCICIO CREAR UNA FUNCION QUE DADO UN ARGUMENTO ME DIGA SI ES + - O =0
+function diferenciar(x){
+    if(x>0){
+        console.log(`${x} es un numero positivo`);
+    }
+    else if(x<0){
+        console.log(`${x} es un numero negativo`);
+    }
+    else if(x===0){
+        console.log(`Es 0`);
+    }
+    else{
+        console.log(`${x} no es un numero`);
+    }
+};
+diferenciar(78)
+
+//EJERCICIO CREAR UNA FUNCIÓN QUE RECIBE COMO ARGUMENTO UN NUMERO POSITIVO, QUE ME DE UNA CUENTA ATRÁS.
+
+function regresion(x){
+    for(let i=x; i>=0; i--){
+        console.log(i);
+    }
+}
+regresion(7);
+
+//CREAR UNA FUNCIÓN ACUMULACION QUE ECIBE UN ARGUMENTO DE ENTRADA, Y ME VA A DEVOLVER LA SUMA DE TODOS LOS NUMEROS ENTRE 0 Y ESE ARGUMENTO
+let y = 0
+function acumulacion(x){
+    for(let i=x; i>=0; i--){
+        y=y+i
+    }
+    console.log(y);
+}
+acumulacion(4)
+
+//FUNCION QUE RECIBE ARGUMENTO, QUE CALCULA LA MEDIA DE LA SUMA DE TODOS LOS VALORES. WHILE
+let sumaValores = 0; //Declaramos una variable fuera de la función que vaya acumulando la suma de los valores entre 0 y el argumento dado
+function media(x){
+    let i = x; //Para eso, decidimos que el indice sea igual al argumento dado, en este caso 4
+    while(i>=0){ //Como 4, 3, 2,1 y 0 son mayores o iguales a 0, entran en el bucle
+        sumaValores+=i; //Aqui utilizamos la variable, que vale 0, y le sumamos i, que vale lo que el argumento, y se va almacenando cada valor que vale i a lo que vale la variable
+        i-- //Como vamos de 4 a 0, tenemos que restarle en cada vuelta de bucle -1
+    }
+    mediaValores=(sumaValores/x+1) //Y fuera del bucle, hacemos la media de todos los valores(que son 5 porque contamos el 0)
+    console.log(mediaValores);
+}
+
+media(4)
