@@ -226,9 +226,29 @@ body{
     background-repeat: no-repeat;
 }
 
+/* ESTILO HORARIOS */
+.contenedorHorario{
+    background-color: rgb(179, 172, 172,0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contenedorHorario>div>h2{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color: var(--colorNegro);
+
+}
+.diasHoras{
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--fuenteSecundaria);
+    color:var(--colorNegro);
+}
+.horaFestivo{
+    text-align: center;
+}
+
 /* ESTILO LOCALIZACIONES */
-
-
 .iconoLocalizacion{
     display: flex;
     justify-content: left;
