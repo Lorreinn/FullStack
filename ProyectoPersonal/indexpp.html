@@ -38,32 +38,30 @@
     <!-- NAVEGADOR + LOGO + HEADER -->
     <!-- Aquí vamos a meter un navegador que nos va a acompañar según scrolleamos hacía abajo, y a la vez va a ser el encabezado de la pagina web, con el logo(que vamos a crear en canva) -->
 
-    <header class="navegador">
-
-        <!-- CARTA (QUE DIRIJA A OTRA PAGINA) -->
-        <div class="carta">
-            <a href="#">Carta</a>
-            <a href="#contacto">Contacto</a>
+    <header>
+        <div class="navegador">
+            <!-- CARTA (QUE DIRIJA A OTRA PAGINA) -->
+            <div class="carta">
+                <a href="#">Carta</a>
+                <a href="#contacto">Contacto</a>
+                <!--ANCLA PARA SCROLLEAR HACIA ABAJO ¡¡AÑADIR TRANSICIÓN SMOOTH!!-->
+                <!-- HORARIOS Y LOCALIZACIONES (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA AL FOOTER) -->
+            </div>
+            <div>
+                <!-- LOGO (QUE NOS RECARGUE LA PAGINA)¿PODEMOS HACER QUE SOBRESALGA UN POCO DEL HEADER PARA QUE SE VEA MEJOR? -->
+                <a href="http://127.0.0.1:5500/ProyectoPersonal/indexpp.html"><img src="./img/logo-removebg-preview.png"
+                        alt="logo_kokoro_latino"></a>
+            </div>
             <!--ANCLA PARA SCROLLEAR HACIA ABAJO ¡¡AÑADIR TRANSICIÓN SMOOTH!!-->
-            <!-- HORARIOS Y LOCALIZACIONES (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA AL FOOTER) -->
-        </div>
+            <!-- CONTACTO (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA) -->
 
-        <div>
-            <!-- LOGO (QUE NOS RECARGUE LA PAGINA)¿PODEMOS HACER QUE SOBRESALGA UN POCO DEL HEADER PARA QUE SE VEA MEJOR? -->
-            <a href="http://127.0.0.1:5500/ProyectoPersonal/indexpp.html"><img src="./img/logo-removebg-preview.png"
-                    alt="logo_kokoro_latino"></a>
-        </div>
+            <div class="horario">
+                <a href="#horario">Horario</a>
+                <a href="#localizaciones">Localizaciones</a>
 
-        <!--ANCLA PARA SCROLLEAR HACIA ABAJO ¡¡AÑADIR TRANSICIÓN SMOOTH!!-->
-        <!-- CONTACTO (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA) -->
+            </div>
 
-        <div class="horario">
-            <a href="#horario">Horario</a>
-            <a href="#localizaciones">Localizaciones</a>
-
-        </div>
-
-
+    </div>
 
     </header>
 
@@ -108,10 +106,13 @@
     <!-- CARTA (BREVE RESUMEN O MENU DEL DIA DE LA CARTA QUE DIRIJA DIRECTAMENTE A LA CARTA) -->
 
     <section class="contenedor"> <!--Ponemos botones?-->
-        <a href="">Menu del dia</a>
-        <a href="">Carta en pdf</a>
-        <a href="">Carta de bebidas</a>
-
+        <div class="contenedorCarta">
+            <div class="cartapdf">
+                <a href="">Menu del dia</a>
+                <a href="">Carta de bebidas</a>
+                <a href="">Carta en pdf</a>
+            </div>
+        </div>
     </section>
 
 
