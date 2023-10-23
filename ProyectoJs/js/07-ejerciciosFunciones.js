@@ -12,7 +12,7 @@ function reverseCadena(cadena){
     return console.log(`La cadena original es ${cadena}, y la cadena inversa es ${cadenaInversa}`);
 }
 
-reverseCadena("Hola Mundo");
+reverseCadena("Esther");
 
 /*
 
@@ -43,7 +43,15 @@ F: CONTIENE
 P: CADENA, LETRA
 */
 
+function contiene(cadena, letra){
+    if (cadena.includes(letra)){
+        console.log(`La letra '${letra}' está dentro del texto '${cadena}'`)
+    } else {
+        console.log(`La letra '${letra}' está dentro del texto '${cadena}'`)
+    }
+}   
 
+contiene("mandarina", "a")
 
 /*
 función que encuentre el número más grande en un array.
@@ -75,7 +83,20 @@ función que cuente la cantidad de elementos booleanos verdadero/falso en un arr
 F: NUMBOOLEANOS
 P: ARRAY, VALOR
 */
+let arrayBool = [true, false, true, true, true, false];
+function numBooleanos(array, valor){
+    let contador = 0
+    for(let i = 0; i<array.length; i++){
+        if(array[i] === valor){
+            contador +=1
+        }
 
+    }
+    console.log(`El numero de ${valor} es ${contador}`);
+
+}
+
+numBooleanos(arrayBool, true)
 /*
 función que determine si todos los elementos de un array son números.
 F: ARRAYNUMEROS
@@ -127,7 +148,7 @@ F: GRADOS
 P: CELSIUS
 */
 function grados(celsius){
-    return console.log((`A partir de ${celsius} grados celsius tenemos ${(celsius * 9 / 5) + 32} grados farenheit`));
+     console.log((`A partir de ${celsius} grados celsius tenemos ${(celsius * 9 / 5) + 32} grados farenheit`));
 }
 
 grados(25);
@@ -156,15 +177,22 @@ F: VOCALES
 P: TEXTO
 */
 function vocales(texto){
-    let contadorvocal=0
-    for (i=0; i<texto.length; i++){
-        if(texto[i]=="a"||texto[i]=="o"||texto[i]=="u"||texto[i]=="e"||texto[i]=="i"){
-            contadorvocal+=1;
+    let contadorvocal = 0
+    for (i = 0; i < texto.length; i++){
+        if (
+            texto[i] == "a" ||
+            texto[i] == "o" || 
+            texto[i] == "u" || 
+            texto[i] == "e" || 
+            texto[i] == "i"
+            ) {
+            contadorvocal += 1;
         }
     }
     return console.log(`Numero de vocales ${contadorvocal}`)
 }
 vocales("Hola gente")
+
 /*
 función que cuente la cantidad de palabras en una cadena.
 F: PALABRAS
@@ -186,7 +214,7 @@ F: ELIMINADUPLICADOS
 P: ARRAY
 */
 
-let arrayDup = [3,4,5,6,6,6,8,59,8,3];
+let arrayDup = [3,4,5,6,6,6,8,59,8,3,9];
 function eliminaDuplicados(array){
     let arraySinDup = [...new Set(array)]; //Si convertimos el array en un Set, que es un tipo de estructura que no admite elementos duplicados.
     return console.log(arraySinDup);
@@ -200,8 +228,11 @@ F: ORDENARARRAY
 P: ARRAY
 */
 
+function ordenArray(array){
+    console.log(array.sort((a, b) => a - b)) ;
+}
 
-
+ordenArray(arrayDup)
 
 /*
 función que muestre la tabla de multiplicar de un numero.
@@ -210,13 +241,14 @@ A: NUMERO
 */
 
 function tablamult (numero){
+    console.log(`La tabla de multiplicar del ${numero} es:`)
     for (i=0; i<=10; i++){
         resultado = i*numero
-        console.table(`La tabla de multiplicar del ${numero} es ${numero} x ${i} = ${resultado}`);
+        console.table( `${numero} x ${i} = ${resultado}`);
     }
 }
 
-tablamult(2)
+tablamult(8)
 /*
 función que tome un número del 1 al 12 y devuelva el nombre del mes 
 correspondiente utilizando una declaración switch
@@ -267,39 +299,24 @@ P: CONTRASEÑA
 */
 
 function contraSegura(contra){
-    let contadorcontra = 0
-    for(i=0;i<contra.length;i++){
-        contadorcontra+=1
-        if (contra.length>7){
-            contadorcontra+=1
-            if (contra===/[A-Z]/.test(contra)){
-                contadorcontra+=1
-                if(contra===/[a-z]/.test(contra)){
-                    contadorcontra+=1
-                    if (contra===/\d/.test(contra)){
-                        contadorcontra+=1
-                    }
-
-                }
-
-            }
-        }else{
-            console.log("La contraseña no es segura")
-        }
-    }console.log(contadorcontra)
+    if (contra.length>7 && /[A-Z]/.test(contra) && /[a-z]/.test(contra) && /\d/.test(contra)){
+        console.log("La contraseña es segura")
+    } else {
+        console.log("La contraseña NO es segura")
+    }
+            
 }
 
-contraSegura("Holamell")
+contraSegura("Holamellangir67")
 
 /*
 función que tome una cadena y reemplace todas las letras 'LETRA1' por 'LETRA2'.
 F: REEMPLAZAR
 P: LETRA1, LETRA2
 */ 
-let letra= "hola"
-letraSeparada = letra.split()
-console.log(letraSeparada)
-// function reemplazar(letra1, letra2){
-//     let letra1dos = ""
-//     for (i=0;i<)
-// }
+let texto = "Hola amigos, amigos"
+function reemplazar(letra1, letra2){
+    
+    console.log(texto.replaceAll(letra1, letra2));
+}
+reemplazar("amigos", "colegas")
