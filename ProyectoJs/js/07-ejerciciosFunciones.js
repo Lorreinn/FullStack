@@ -22,16 +22,22 @@ F: CONCATENAR
 P: CADENA1, CADENA2
 */
 function concatenar(c1,c2){
-    if (typeof c1 ==="string" && typeof c2 === "string"){
+    if (
+        typeof c1 ==="string" && typeof c2 === "string"
+        ){
         return console.log(`Así es cómo concatenamos dos cadenas de texto ${c1+c2}`);
     }
-    else if(typeof c1 ==="string"&& typeof c2 != "string"){
+    else if (
+        typeof c1 === "string" && typeof c2 != "string"
+        ) {
         return console.log(`${c2} no es una cadena de texto`);
     }
-    else if(typeof c1 !="string"&& typeof c2 === "string"){
+    else if (
+        typeof c1 != "string" && typeof c2 === "string"
+        ){
         return console.log(`${c1} no es una cadena de texto`);
     }
-    else{
+    else {
         return console.log(`${c1, c2} No son cadenas de texto, prueba de nuevo`);
     }
 }
@@ -44,7 +50,9 @@ P: CADENA, LETRA
 */
 
 function contiene(cadena, letra){
-    if (cadena.includes(letra)){
+    if (
+        cadena.includes(letra)
+        ){
         console.log(`La letra '${letra}' está dentro del texto '${cadena}'`)
     } else {
         console.log(`La letra '${letra}' está dentro del texto '${cadena}'`)
@@ -128,7 +136,7 @@ P: N1,N2
 
 function numAleatorio(n1, n2){
 
-    return console.log(Math.round(Math.random() * (n1-n2) + n2));
+     console.log(Math.floor(Math.random() * (n2-n1)+n1)); //También se puede utilizar math round para redondear
 }
 numAleatorio(0, 100);
 
@@ -299,7 +307,12 @@ P: CONTRASEÑA
 */
 
 function contraSegura(contra){
-    if (contra.length>7 && /[A-Z]/.test(contra) && /[a-z]/.test(contra) && /\d/.test(contra)){
+    if (
+        contra.length>7 && 
+        /[A-Z]/.test(contra) && 
+        /[a-z]/.test(contra) && 
+        /\d/.test(contra)
+        ) {
         console.log("La contraseña es segura")
     } else {
         console.log("La contraseña NO es segura")
