@@ -144,6 +144,7 @@ body{
     justify-content: left;
     padding-left: 20px;
     align-items: center;
+    font-family: var(--fuenteSecundaria);
 }
 .imgresena1{
     background-image: url(../img/face-review.jpeg);
@@ -168,6 +169,7 @@ body{
     justify-content: left;
     padding-left: 20px;
     align-items: center;
+    font-family: var(--fuenteSecundaria);
 }
 .imgresena2{
     background-image: url(../img/face-review1.jpeg);
@@ -191,6 +193,7 @@ body{
     justify-content: left;
     padding-left: 20px;
     align-items: center;
+    font-family: var(--fuenteSecundaria);
 }
 .imgresena3{
     background-image: url(../img/face-review2.jpeg);
@@ -215,6 +218,7 @@ body{
     justify-content: left;
     padding-left: 20px;
     align-items: center;
+    font-family: var(--fuenteSecundaria);
 }    
 .imgresena4{
     background-image: url(../img/face-review3.jpeg);
@@ -247,6 +251,7 @@ body{
 .horaFestivo{
     text-align: center;
 }
+/* ESTILO DEL FOOTER */
 
 /* ESTILO LOCALIZACIONES */
 .iconoLocalizacion{
@@ -274,8 +279,6 @@ body{
     color: var(--colorOcre);
     text-decoration: underline;
 }
-
-
 
 
 
