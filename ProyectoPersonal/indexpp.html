@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -70,29 +69,34 @@
         <!-- EL NAVEGADOR SE TIENE QUE FUSIONAR CON EL CARROUSEL Y CUANDO SCROLLEAS HACÍA ABAJO YA SE DESPEGA -->
         <!-- Galería de imágenes CARRUSEL DE IMAGENES DE FONDO -->
         <div class="carrousel">
-            <img src="img/ArrozConCarne.jpg">
-            <img src="img/BrochetaDeLangostinosyArroz.jpg">
-            <img src="img/BurritoPollo.jpg">
-            <img src="img/CaliforniaRoll.jpg">
-            <img src="img/CarneAlaBrasa.jpg">
-            <img src="img/CevicheMixto.jpg">
-            <img src="img/Cocinero.jpg">
-            <img src="img/EnsaladaAsiatica.jpg">
-            <img src="img/GyozaFrita.jpg">
-            <img src="img/MakideSalmon.jpg">
-            <img src="img/Mesa.jpg">
-            <img src="img/MesaConComida.jpg">
-            <img src="img/MesaConGente.jpg">
-            <img src="img/Nachos.jpg">
-            <img src="img/PadThaiMarisco.jpg">
-            <img src="img/PadThaiTernera.jpg">
-            <img src="img/PescadoAlaBrasa.jpg">
-            <img src="img/PlatanoFrito.jpg">
-            <img src="img/RamenDeCarne.jpg">
-            <img src="img/Restaurante.jpg">
-            <img src="img/RollitosdePrimavera.jpg">
-            <img src="img/TacosConFrijoles.jpg">
-            <img src="img/TacosdeTernera.jpg">
+            
+            <ol class="listaImagenes">
+                
+                <li><img src="img/ArrozConCarne.jpg"></li>
+                <li><img src="img/BrochetaDeLangostinosyArroz.jpg"></li>
+                <li><img src="img/BurritoPollo.jpg"></li>
+                <li><img src="img/CaliforniaRoll.jpg"></li>
+                <li><img src="img/CarneAlaBrasa.jpg"></li>
+                <li><img src="img/CevicheMixto.jpg"></li>
+                <li><img src="img/Cocinero.jpg"></li>
+                <li><img src="img/GyozaFrita.jpg"></li>
+                <li><img src="img/MakideSalmon.jpg"></li>
+                <li><img src="img/Mesa.jpg"></li>
+                <li><img src="img/MesaConComida.jpg"></li>
+                <li><img src="img/MesaConGente.jpg"></li>
+                <li><img src="img/Nachos.jpg"></li>
+                <li> <img src="img/PadThaiMarisco.jpg"></li>
+                <li><img src="img/PadThaiTernera.jpg"></li>
+                <li><img src="img/PescadoAlaBrasa.jpg"></li>
+                <li><img src="img/PlatanoFrito.jpg"></li>
+                <li><img src="img/RamenDeCarne.jpg"></li>
+                <li><img src="img/Restaurante.jpg"></li>
+                <li><img src="img/RollitosdePrimavera.jpg"></li>
+                <li> <img src="img/TacosConFrijoles.jpg"></li>
+                <li>  <img src="img/TacosdeTernera.jpg"></li>
+    
+            </ol>
+            
         </div>
 
         <!-- BREVE TEXTO MISION Y VISION DEL RESTAURANTE, NUESTRO COMPROMISO EJ ECOLOGICO, CARTA VEGANA,  -->
@@ -105,7 +109,7 @@
     <!-- Flecha que este situada en la parte inferior y que te scrollee atutomaticamente hacia arriba al darle click  -->
 
     <!-- CARTA (BREVE RESUMEN O MENU DEL DIA DE LA CARTA QUE DIRIJA DIRECTAMENTE A LA CARTA) -->
-    
+
     <section class="contenedor"> <!--Los botones aparecen al scrollear hacía abajo-->
         <div class="contenedorCarta">
             <div class="cartapdf">
@@ -122,48 +126,66 @@
     <!-- EVENTOS Y SHOWS (OPCIONAL) -->
 
     <section>
-
+        
     </section>
 
 
     <!-- RESEÑAS -->
 
     <section class="contenedor">
-        <div class="resenas">
-            <div class="resena1">
-                <div class="imgresena1">
-
-                </div>
-                <h2>En Kokoro Latino se combinan con maestría los sabores asiáticos y latinoamericanos. Cada plato es
-                    una obra maestra de la fusión gastronómica, ofreciendo una experiencia única y deliciosa. Desde su
-                    ambiente acogedor hasta su sorprendente menú, Kokoro Latino es una parada obligatoria para los
-                    amantes de la comida auténtica y creativa. ¡Prepárate para un viaje culinario inolvidable!</h2>
+        <div class="contenedorSlider">
+            <!-- IMAGEN DE FLECHA DERECHA -->
+            <div class="sliderDerecho">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z"></path>
+                 </svg>
             </div>
-            <div class="resena2">
-                <div class="imgresena2">
-
-                </div>
-                <h2>Kokoro Latino es un verdadero rincón de maravillas gastronómicas. El ambiente acogedor y el servicio
-                    amable hacen que este restaurante sea perfecto para una noche memorable.</h2>
+            <!-- IMAGEN DE FLECHA IZQUIERDA -->
+            <div class="sliderIzquierdo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z"></path>
+                 </svg>
             </div>
-            <div class="resena3">
-                <div class="imgresena3">
+            <div class="sliderR1">
+                <div class="resenas">
+                    <div class="resena1">
+                        <div class="imgresena1">
 
+                        </div>
+                        <h2>En Kokoro Latino se combinan con maestría los sabores asiáticos y latinoamericanos. Cada plato es
+                            una obra maestra de la fusión gastronómica, ofreciendo una experiencia única y deliciosa. Desde su
+                            ambiente acogedor hasta su sorprendente menú, Kokoro Latino es una parada obligatoria para los
+                            amantes de la comida auténtica y creativa. ¡Prepárate para un viaje culinario inolvidable!</h2>
+                    </div>
                 </div>
-                <h2>En Kokoro Latino, desde los rolls de sushi con un toque latino hasta los platos de ceviche con un
-                    giro asiático, cada bocado es una deliciosa sorpresa. La decoración moderna y el servicio atento
-                    completan la experiencia. Si estás en busca de una aventura culinaria que despierte tus sentidos,
-                    Kokoro Latino es el lugar ideal para satisfacer tu apetito por la creatividad culinaria.</h2>
-            </div>
-            <div class="resena4">
-                <div class="imgresena4">
+                <div class="resena2">
+                    <div class="imgresena2">
 
+                    </div>
+                    <h2>Kokoro Latino es un verdadero rincón de maravillas gastronómicas. El ambiente acogedor y el servicio
+                        amable hacen que este restaurante sea perfecto para una noche memorable.</h2>
                 </div>
-                <h2>Kokoro Latino es un verdadero oasis de sabores que te sumerge en un mundo culinario donde Asia y
-                    Latinoamérica se abrazan. Cada plato es una obra maestra de la fusión, presentando combinaciones de
-                    ingredientes que te sorprenderán gratamente. La decoración elegante y el ambiente acogedor hacen que
-                    este lugar sea perfecto para cualquier ocasión, desde cenas románticas hasta reuniones familiares
-                </h2>
+                <div class="resena3">
+                    <div class="imgresena3">
+
+                    </div>
+                    <h2>En Kokoro Latino, desde los rolls de sushi con un toque latino hasta los platos de ceviche con un
+                        giro asiático, cada bocado es una deliciosa sorpresa. La decoración moderna y el servicio atento
+                        completan la experiencia. Si estás en busca de una aventura culinaria que despierte tus sentidos,
+                        Kokoro Latino es el lugar ideal para satisfacer tu apetito por la creatividad culinaria.</h2>
+                </div>
+                <div class="resena4">
+                    <div class="imgresena4">
+
+                    </div>
+                    <h2>Kokoro Latino es un verdadero oasis de sabores que te sumerge en un mundo culinario donde Asia y
+                        Latinoamérica se abrazan. Cada plato es una obra maestra de la fusión, presentando combinaciones de
+                        ingredientes que te sorprenderán gratamente. La decoración elegante y el ambiente acogedor hacen que
+                        este lugar sea perfecto para cualquier ocasión, desde cenas románticas hasta reuniones familiares
+                    </h2>
+                </div>
             </div>
         </div>
     </section>
@@ -173,8 +195,6 @@
 
         <div class="contenedor">
             <H2 id="horarioAncla">Horarios</H2>
-
-
             <div class="diasHoras">
                 <div>
                     <H3>Lunes-Jueves </H3>
@@ -184,8 +204,8 @@
                 <div>
                     <h3>Viernes, Sábados y Domingos</h3>
                     <div class="horaFestivo">
-                    <h2>13:00-16:30</h2>
-                    <h2>19:00-00:30</h2>
+                        <h2>13:00-16:30</h2>
+                        <h2>19:00-00:30</h2>
                     </div>
                 </div>
             </div>

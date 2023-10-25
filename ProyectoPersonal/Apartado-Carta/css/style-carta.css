@@ -66,6 +66,33 @@
     text-decoration: none;
 }
 
+.iniciarSesion{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+   
+}
+
+.iniciarSesion a{
+    font-family: var(--fuentePrincipal);
+    color: var(--colorBlanco);
+    text-decoration: none;
+}
+
+.registrarse{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+   
+}
+
+.registrarse a{
+    font-family: var(--fuentePrincipal);
+    color: var(--colorBlanco);
+    text-decoration: none;
+}
+
+
 
 
 

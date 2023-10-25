@@ -79,21 +79,27 @@ body{
 
 /* ESTILO DEL CARROUSEL DE IMAGENES ¡¡MAIN!! */
 .carrousel {
-    width: 500px;
-    overflow: hidden;
-    height: 500px;
-    
+    width: 100%;
+    overflow: hidden; 
 }
 
-.carrousel img {
-    display: none;
-    width: 500px;
-    height: 500px;
+.listaImagenes {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.listaimagenes li {
+    flex: 0 0 100%;
 }
 
-.carrousel img:first-child {
-    display: block;
+.listaImagenes img {
+    width: 100%;
+    width: 500px;
+    height: 500px;
+
 }
+
 
 /* ESTILO APARTADO BOTONES CARTA */
 .contenedorCarta{
