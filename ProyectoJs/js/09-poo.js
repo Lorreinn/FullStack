@@ -11,7 +11,7 @@ function ProductoClase(nombre, precio, disponibilidad = false, categoria = "play
     this.disponibilidad = disponibilidad; //El nombre del de la propiedad puede ser diferente
 }
 
-//LAS INSTANCIAS ES LLAMAR Y VALORAR
+//LAS INSTANCIAS ES LLAMAR Y VALORAR, INICIALIZAMOS VARIABLES Y ALMACENAMOS DENTRO DE ESAS VARIABLES LOS OBJETOS
 const producto2 = new ProductoClase ("Monitor curvo", 800, true, "tech");
 const producto3 = new ProductoClase ("PC", 1800);
 const producto4 = new ProductoClase ("Reloj", 800);
@@ -103,6 +103,7 @@ class Biblioteca extends Libro {
     formatearProducto3(){
         console.log (`El producto ${this.nombre} pertenece a la categoria ${this.categoria}`)
     }
+    
 }   
 
 
@@ -155,7 +156,8 @@ class ITV extends coche {
         else {
             return(`Toca pasar la ITV en el ${añoActual}`)
         }              
-    }    
+    }
+    edadCoche(){super.añosCoche()} //HERENCIA DE MÉTODOS   
 }       
             
 
@@ -163,3 +165,5 @@ miCoche = new ITV (2002, "7710BYL");
 cochePadre = new ITV (2015, "4578GYL")
 console.log(miCoche.pasarItv())
 console.log(cochePadre.pasarItv());
+
+
