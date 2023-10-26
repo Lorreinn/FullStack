@@ -78,27 +78,36 @@ body{
 
 
 /* ESTILO DEL CARROUSEL DE IMAGENES ¡¡MAIN!! */
-.carrousel {
-    width: 100%;
-    overflow: hidden; 
-}
 
-.listaImagenes {
-    list-style: none;
-    width: 100%;
+
+.contenedorSlider{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-.listaimagenes li {
-    flex: 0 0 100%;
+    align-items: center;
+    gap:40px;
+    
 }
 
-.listaImagenes img {
+.sliderIzquierdo, .sliderDerecho{
+    width: 5%;
+}
+
+.sliderIzquierdo svg, .sliderDerecho svg {
     width: 100%;
-    width: 500px;
-    height: 500px;
 
 }
+
+.sliderScreen{
+    width: 90%;
+}
+
+.sliderScreen img{
+    width: 100%;
+}
+
+
+
+
+
 
 
 /* ESTILO APARTADO BOTONES CARTA */
