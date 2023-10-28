@@ -1,4 +1,6 @@
 // // INTERACCIÓN CARRUSEL DE IMAGENES
+
+
 // let imagenes=[
 
 // "ProyectoPersonal/img/ArrozConCarne.jpg",
@@ -110,13 +112,3 @@ showReview(currentReview);
 nextButton.addEventListener('click', nextReview);
 prevButton.addEventListener('click', prevReview);
 
-
-// const botonIz = document.getElementById("prev");
-// const botonDe = document.getElementById("next");
-// botonIz.addEventListener ("click", function(){
-//     console.log ("Diste click")
-// } );
-
-// botonDe.addEventListener ("click", function(){
-//     console.log ("Diste click")
-// } );
