@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,7 +31,7 @@ body {
 }
 
 /* Estilos para la animación del slider */
-.slider .slide:first-child {
+/* .slider .slide:first-child {
     transform: translateX(0);
 }
 
@@ -52,4 +52,80 @@ body {
 
 .slider:hover .slide {
     animation: slideAnimation 15s linear infinite;
+} */ 
+
+.carousel {
+    display: flex;
+    
+    justify-content: center;
+    
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 300px; /* Set the width of the carousel */
+    position: relative;
+  }
+  .carousel-container>button{
+    display: flex;
+    flex-direction: column;
+  }
+  .resenas{
+    display:grid;
+    grid: repeat(4,1fr)/1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.resena1 {
+    display: grid; 
+    grid:1fr/repeat(4,1fr);
+    margin: 20px;
+}
+  .review {
+    width: 100%;
+    display: none;
+  }
+  
+  button {
+    margin: 10px;
+  }
+
+  .imgresena1{
+    background-image: url(../ProyectoPersonal/img/face-review.jpeg);
+    background-size:cover;
+    border-radius: 80%;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.imgresena2{
+    background-image: url(../ProyectoPersonal/img/face-review1.jpeg);
+    background-size:cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgresena3{
+    background-image: url(../ProyectoPersonal/img/face-review2.jpeg);
+    background-size:cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.imgresena4{
+    background-image: url(../ProyectoPersonal/img/);
+    background-size:cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
