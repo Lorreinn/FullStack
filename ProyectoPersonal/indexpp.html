@@ -2,6 +2,9 @@
 <html lang="es">
 
 <head>
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Instalacion de fuente principal -->
@@ -11,6 +14,9 @@
     <!-- Instalación de fuente secundaria -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <link rel="preload" href="./css/stylepp.css" as="style">
@@ -29,7 +35,7 @@
 
 
 <body>
-    <script src="./jspp.js"></script>
+
 
     <!-- <section>
         <h1>HENLOOO</h1> ESTO HAY QUE ELIMINARLO CUANDO TERMINEMOS CON LAS PRUEBAS!!!!
@@ -68,9 +74,9 @@
     <main>
         <!-- EL NAVEGADOR SE TIENE QUE FUSIONAR CON EL CARROUSEL Y CUANDO SCROLLEAS HACÍA ABAJO YA SE DESPEGA -->
         <!-- Galería de imágenes CARRUSEL DE IMAGENES DE FONDO -->
-        <div class= "contenedorSlider">
+        <div class="contenedorSlider">
 
-            <div class="sliderIzquierdo">
+            <div id="anterior">
 
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24"
                     height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -81,18 +87,25 @@
 
             </div>
 
-            <div class="sliderScreen">
+            <!-- <div class="sliderScreen">
 
                 <img name="imagen">
 
+            </div> -->
+            <div class="sliderScreen">
+                <img id="imagen" src="" alt="Imagen" />
             </div>
 
-            <div class="sliderDerecho">
+           
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <div id="siguiente">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M9 6l6 6l-6 6"></path>
-                 </svg>
+                </svg>
 
             </div>
 
@@ -138,77 +151,80 @@
     <!-- RESEÑAS -->
 
     <section class="contenedor">
-        <div class="contenedorSlider">
-            <!-- IMAGEN DE FLECHA DERECHA -->
-            <div class="sliderDerecho">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right" width="50"
-                    height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                        d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z">
-                    </path>
-                </svg>
-            </div>
-            <!-- IMAGEN DE FLECHA IZQUIERDA -->
-            <div class="sliderIzquierdo">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="50"
-                    height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
+            <div class="carousel">
+                <button id="prevButton"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-arrow-big-left" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path
                         d="M20 15h-8v3.586a1 1 0 0 1 -1.707 .707l-6.586 -6.586a1 1 0 0 1 0 -1.414l6.586 -6.586a1 1 0 0 1 1.707 .707v3.586h8a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1z">
                     </path>
                 </svg>
-            </div>
-            <div class="sliderR1">
-                <div class="resenas">
-                    <div class="resena1">
-                        <div class="imgresena1">
-
+            </button>
+                <div class="carousel-container">
+                    <h2>Opiniones y Reseñas</h2>
+                    <div class="review">
+                        <div class="resenas">
+                            <h2 class="imgresena1"></h2>
+                            <h3>En Kokoro Latino se combinan con maestría los sabores asiáticos y
+                                latinoamericanos. Cada
+                                plato es
+                                una obra maestra de la fusión gastronómica, ofreciendo una experiencia única y deliciosa.
+                                Desde su
+                                ambiente acogedor hasta su sorprendente menú, Kokoro Latino es una parada obligatoria para
+                                los
+                                amantes de la comida auténtica y creativa. ¡Prepárate para un viaje culinario inolvidable!
+                            </h3>
                         </div>
-                        <h2>En Kokoro Latino se combinan con maestría los sabores asiáticos y latinoamericanos. Cada
-                            plato es
-                            una obra maestra de la fusión gastronómica, ofreciendo una experiencia única y deliciosa.
-                            Desde su
-                            ambiente acogedor hasta su sorprendente menú, Kokoro Latino es una parada obligatoria para
-                            los
-                            amantes de la comida auténtica y creativa. ¡Prepárate para un viaje culinario inolvidable!
-                        </h2>
+                    </div>
+                    <div class="review">
+                        <div class="resenas">
+                        <h2 class="imgresena2"></h2>
+                        <h3>Kokoro Latino es un verdadero rincón de maravillas gastronómicas. El ambiente acogedor y el
+                            servicio
+                            amable hacen que este restaurante sea perfecto para una noche memorable.</h3>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="resenas">
+                        <h2 class="imgresena3"></h2>
+                        <h3>En Kokoro Latino, desde los rolls de sushi con un toque latino hasta los platos de ceviche
+                            con
+                            un
+                            giro asiático, cada bocado es una deliciosa sorpresa. La decoración moderna y el servicio
+                            atento
+                            completan la experiencia. Si estás en busca de una aventura culinaria que despierte tus
+                            sentidos,
+                            Kokoro Latino es el lugar ideal para satisfacer tu apetito por la creatividad culinaria.</h3>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="resenas">
+                        <h2 class="imgresena4"></h2>
+                        <h3>Kokoro Latino es un verdadero oasis de sabores que te sumerge en un mundo culinario donde
+                            Asia y
+                            Latinoamérica se abrazan. Cada plato es una obra maestra de la fusión, presentando
+                            combinaciones
+                            de
+                            ingredientes que te sorprenderán gratamente. La decoración elegante y el ambiente acogedor
+                            hacen
+                            que
+                            este lugar sea perfecto para cualquier ocasión, desde cenas románticas hasta reuniones
+                            familiares</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="resena2">
-                    <div class="imgresena2">
-
-                    </div>
-                    <h2>Kokoro Latino es un verdadero rincón de maravillas gastronómicas. El ambiente acogedor y el
-                        servicio
-                        amable hacen que este restaurante sea perfecto para una noche memorable.</h2>
-                </div>
-                <div class="resena3">
-                    <div class="imgresena3">
-
-                    </div>
-                    <h2>En Kokoro Latino, desde los rolls de sushi con un toque latino hasta los platos de ceviche con
-                        un
-                        giro asiático, cada bocado es una deliciosa sorpresa. La decoración moderna y el servicio atento
-                        completan la experiencia. Si estás en busca de una aventura culinaria que despierte tus
-                        sentidos,
-                        Kokoro Latino es el lugar ideal para satisfacer tu apetito por la creatividad culinaria.</h2>
-                </div>
-                <div class="resena4">
-                    <div class="imgresena4">
-
-                    </div>
-                    <h2>Kokoro Latino es un verdadero oasis de sabores que te sumerge en un mundo culinario donde Asia y
-                        Latinoamérica se abrazan. Cada plato es una obra maestra de la fusión, presentando combinaciones
-                        de
-                        ingredientes que te sorprenderán gratamente. La decoración elegante y el ambiente acogedor hacen
-                        que
-                        este lugar sea perfecto para cualquier ocasión, desde cenas románticas hasta reuniones
-                        familiares
-                    </h2>
-                </div>
+                <button id="nextButton"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-arrow-big-right" width="30" height="30" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z">
+                    </path>
+                </svg>
+            </button>
             </div>
         </div>
     </section>
@@ -305,7 +321,7 @@
                             </svg>
                         </a>
                         <!-- ICONO TIKTOK -->
-                        <a href="#"> <!--Aquí deberia ir el link a la pagina de tiktok, pero no tenemos-->
+                        <a href="#" id="tiktok"> <!--Aquí deberia ir el link a la pagina de tiktok, pero no tenemos-->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
                                 width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -324,7 +340,7 @@
 
     </footer>
 
-
+    <script src="./jspp.js"></script>
 </body>
 
 </html>

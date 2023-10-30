@@ -105,7 +105,12 @@ body{
 }
 
 
-
+#imagen {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* Para ajustar la imagen sin distorsionarla */
+    object-position: center center; 
+}
 
 
 
@@ -140,52 +145,66 @@ body{
 
 
 /*ESTILO  APARTADO RESEÑAS*/
-.resenas{
-    display:grid;
-    grid: repeat(4,1fr)/1fr;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-    /* ESTILO DE LA PRIMERA RESEÑA */
-.resena1{
-    display: grid; 
-    grid:1fr/repeat(4,1fr);
-    margin: 20px;
+.carousel {
     
-}
-.resena1 h2{
-    grid-column: 2/5;
-    display:flex;
-    justify-content: left;
-    padding-left: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    font-family: var(--fuenteSecundaria);
+   
+  }
+  
+  .carousel-container {
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .carousel-container h2{
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+  }
+ 
+  .review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px
+
+  }
+  .resenas { /*Con esto hacemos que la foto y el texto este alineado*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.resenas h3{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px
 }
+
+
+button:hover {
+    color: var(--colorDorado);
+}
+
 .imgresena1{
     background-image: url(../img/face-review.jpeg);
     background-size:cover;
-    border-radius: 80%;
+    border-radius: 50%;
     height: 200px;
     width: 200px;
     background-position: center;
     background-repeat: no-repeat;
     
 }
-    /* ESTILO DE LA SEGUNDA RESEÑA */
-.resena2{
-    display: grid; 
-    grid:1fr/repeat(4,1fr);
-    margin: 20px;
 
-}
-.resena2 h2{
-    grid-column: 2/5;
-    display:flex;
-    justify-content: left;
-    padding-left: 20px;
-    align-items: center;
-    font-family: var(--fuenteSecundaria);
-}
 .imgresena2{
     background-image: url(../img/face-review1.jpeg);
     background-size:cover;
@@ -194,21 +213,6 @@ body{
     width: 200px;
     background-position: center;
     background-repeat: no-repeat;
-}
-    /* ESTILO DE LA TERCERA RESEÑA */
-.resena3{
-    display: grid; 
-    grid:1fr/repeat(4,1fr);
-    margin: 20px;
-    
-}
-.resena3 h2{
-    grid-column: 2/5;
-    display:flex;
-    justify-content: left;
-    padding-left: 20px;
-    align-items: center;
-    font-family: var(--fuenteSecundaria);
 }
 .imgresena3{
     background-image: url(../img/face-review2.jpeg);
@@ -220,21 +224,6 @@ body{
     background-repeat: no-repeat;
 
 }
-    /* ESTILO DE LA CUARTA RESEÑA */
-.resena4{
-    display: grid; 
-    grid:1fr/repeat(4,1fr);
-    margin: 20px;
-        
-}
-.resena4 h2{
-    grid-column: 2/5;
-    display:flex;
-    justify-content: left;
-    padding-left: 20px;
-    align-items: center;
-    font-family: var(--fuenteSecundaria);
-}    
 .imgresena4{
     background-image: url(../img/face-review3.jpeg);
     background-size:cover;
@@ -244,6 +233,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 /* ESTILO HORARIOS */
 .contenedorHorario{
