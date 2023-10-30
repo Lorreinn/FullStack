@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,7 +31,7 @@ body {
 }
 
 /* Estilos para la animación del slider */
-.slider .slide:first-child {
+/* .slider .slide:first-child {
     transform: translateX(0);
 }
 
@@ -52,4 +52,8 @@ body {
 
 .slider:hover .slide {
     animation: slideAnimation 15s linear infinite;
+}  */
+
+.seccionPrincipal {
+    background-image: url(../Proyecto_inicio/img/Curso-programacion-web-full-stack-centro.png);
 }
