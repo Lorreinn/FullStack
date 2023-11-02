@@ -5,7 +5,7 @@ function obtenerEmpleados(){
         .then(resultado=>{
             return resultado.json() //VOY A TENER UNA RESPUESTA DE TIPO JSON
         })
-        .then (datos=>{
+        .then (datos=>{ //Con ese resultado aplicamos otra promesa, que lo almacena en el parametro datos, y los datos hacen un destructuring de las propiedades empleados.
             const{empleados} = datos; //DESTRUCTURING PARA CREAR VARIABLES A PARTIR DE LAS PROPIEDADES
             console.log(empleados);
 
