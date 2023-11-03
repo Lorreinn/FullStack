@@ -46,12 +46,12 @@ body{
     margin-bottom: 80px;
 }
 
-@media (max-width: 1140px){
+/* @media (max-width: 1140px){
     .navegedor{
 
 
     }
-}
+} */
 
 .carta {
     display: flex;
@@ -138,12 +138,23 @@ body{
 /* PRUEBA FONDO TRANSPARENCIAS */
 .prueba {
     background-image: url(../img/plantas_fondob&w.jpg);
-    height: 500px;
+    height: 1000px;
     background-color: #1e1f22;
+    opacity: 0.5;
 }
-.prueba h2{
-    color: red;
-    opacity: 1;
+.prueba>div>h2{
+    font-family: var(--fuentePrincipal);
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: var(--colorDorado);
+}
+.prueba p{
+    color: var(--colorDorado);
+    text-align: center;
+    padding: 100px;
+    font-family: var(--fuenteSecundaria);
 }
 
 /* ESTILO APARTADO BOTONES CARTA */
@@ -337,8 +348,7 @@ button:hover {
 .contenedorRRSS{
     display: grid;
     grid: repeat(4,1fr)/repeat(2,1fr);
-    
-    
+
 }
     /* COLOCACION DE EL APARTADO DE CONTACTO */
 .contenedorRRSS h2{
@@ -346,6 +356,7 @@ button:hover {
     color:var(--colorNegro); 
     text-transform: uppercase;
     font-size: 25px;
+
 }
 
 /* ESTILO DE LOS TELEFONOS Y EL EMAIL */
@@ -355,8 +366,7 @@ button:hover {
     font-family: var(--fuenteSecundaria);
     font-size:25px;
     font-weight: 600px;
-    display:flex;
-    justify-content: left;
+    
 }
 .tlf1{
     grid-row: 2/5;
@@ -404,3 +414,20 @@ button:hover {
     color: var(--colorNegro);
     padding:10px
 }
+
+/* .logoFooter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-row: 5/5;
+    grid-column: 2/2;
+    margin-top: -40px;
+}
+.logoFooter img{
+    height: 180px;
+    width: 180px;
+   
+} */
+
+
+
