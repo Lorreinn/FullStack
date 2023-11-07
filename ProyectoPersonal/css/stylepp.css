@@ -10,6 +10,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -33,7 +34,28 @@ body{
     color: aqua;
 } */
 
+/* ESTILO DEL ICONO DE LA FLECHA QUE SCROLLEA */
+#scrolltotop {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición vertical */
+    right: 20px; /* Ajusta la posición horizontal */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  #scrolltotoplink {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+  }
 
+
+  /* ESTILO DEL ICONO DE TLF QUE POPEA UN FORMULARIO */
+
+  
 /*ESTILO DEL NAVEGADOR-HEADER*/
 
 .navegador{
@@ -122,8 +144,12 @@ body{
     /* border-radius: 20px 10px 30px 5px; */
     animation: slideIn 1s;
     margin-top: -80px;
+     
 
 }
+
+
+  
 
 @keyframes slideIn {
     from {
@@ -135,12 +161,12 @@ body{
   }
 
 
+
+
 /* PRUEBA FONDO TRANSPARENCIAS */
 .prueba {
     background-image: url(../img/plantas_fondob&w.jpg);
     height: 1000px;
-    background-color: #1e1f22;
-    opacity: 0.5;
 }
 .prueba>div>h2{
     font-family: var(--fuentePrincipal);
@@ -155,6 +181,7 @@ body{
     text-align: center;
     padding: 100px;
     font-family: var(--fuenteSecundaria);
+    font-size: 4rem;
 }
 
 /* ESTILO APARTADO BOTONES CARTA */
@@ -307,6 +334,7 @@ button:hover {
 /* ESTILO DEL FOOTER */
 
 /* ESTILO LOCALIZACIONES */
+
 .iconoLocalizacion{
     display: flex;
     justify-content: left;
