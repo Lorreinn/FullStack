@@ -104,7 +104,7 @@
 
 /* ESTILO HORARIOS */
 .contenedorHorario{
-    background-color: rgb(179, 172, 172,0.8);
+    background-color:var(--colorOcre);
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -160,6 +160,8 @@
 
 /* ESTILO RRSS Y CONTACTOS */
     /* ESTILO DE LA BARRA SUPERIOR DEL CONTENEDOR */ 
+
+
 .rrss{
     border-top: 5px ridge var(--colorOcre);
     /* height: 200px; */
@@ -177,14 +179,14 @@
     /* COLOCACION DE EL APARTADO DE CONTACTO */
 .contenedorRRSS h2{
     font-family: var(--fuenteSecundaria);
-    color:var(--colorNegro); 
+    color:var(--colorDorado); 
     text-transform: uppercase;
     font-size: 25px;
 }
 
 /* ESTILO DE LOS TELEFONOS Y EL EMAIL */
 .contenedorRRSS>a{
-    color:var(--colorNegro);
+    color:var(--colorDorado);
     text-decoration: none;
     font-family: var(--fuenteSecundaria);
     font-size:25px;
@@ -217,7 +219,7 @@
     grid-row: 2/3;
     padding-right: 77px;
     font-size: 25px;
-    color:var(--colorNegro);
+    color:var(--colorDorado);
     font-family: var(--fuenteSecundaria);
     text-transform: uppercase;
 }
@@ -235,6 +237,6 @@
 }
         /* ESTILO DE LOS ICONOS */
 .iconos a{
-    color: var(--colorNegro);
+    color: var(--colorDorado);
     padding:10px
 }

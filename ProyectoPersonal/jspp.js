@@ -112,3 +112,20 @@ showReview(currentReview);
 nextButton.addEventListener('click', nextReview);
 prevButton.addEventListener('click', prevReview);
 
+
+
+// POP UP FORMULARIO
+
+const showPopupLink = document.getElementById('show-popup-link');
+  const closePopup = document.getElementById('close-popup');
+  const popup = document.getElementById('popup-container');
+
+  showPopupLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    popup.style.display = 'block';
+  });
+
+  closePopup.addEventListener('click', function () {
+    popup.style.display = 'none';
+  });
+
