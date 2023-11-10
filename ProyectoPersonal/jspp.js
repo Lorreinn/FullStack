@@ -1,36 +1,6 @@
 // // INTERACCIÓN CARRUSEL DE IMAGENES
 
 
-// let imagenes=[
-
-// "ProyectoPersonal/img/ArrozConCarne.jpg",
-// "ProyectoPersonal/img/BrochetaDeLangostinosyArroz.jpg",
-// "ProyectoPersonal/img/BurritoPollo.jpg",
-// "ProyectoPersonal/img/CaliforniaRoll.jpg",
-// "ProyectoPersonal/img/CarneAlaBrasa.jpg",
-// "ProyectoPersonal/img/CevicheMixto.jpg",
-// "ProyectoPersonal/img/Cocinero.jpg",
-// "ProyectoPersonal/img/EnsaladaAsiatica.jpg",
-// "ProyectoPersonal/img/GyozaFrita.jpg",
-// "ProyectoPersonal/img/GyozaFrita.jpg",
-// "ProyectoPersonal/img/Mesa.jpg",
-// "ProyectoPersonal/img/MesaConComida.jpg",
-// "ProyectoPersonal/img/MesaConGente.jpg",
-// "ProyectoPersonal/img/Nachos.jpg",
-// "ProyectoPersonal/img/PadThaiMarisco.jpg",
-// "ProyectoPersonal/img/PadThaiTernera.jpg",
-// "ProyectoPersonal/img/PescadoAlaBrasa.jpg",
-// "ProyectoPersonal/img/PlatanoFrito.jpg",
-// "ProyectoPersonal/img/RamenDeCarne.jpg",
-// "ProyectoPersonal/img/RollitosdePrimavera.jpg",
-// "ProyectoPersonal/img/TacosConFrijoles.jpg",
-// "ProyectoPersonal/img/TacosdeTernera.jpg"
-
-// ]
-
-
-// document.imagen.src=imagenes[0];
-
 let imagenes = [
   "img/BrochetaDeLangostinosyArroz.jpg",
   "img/CaliforniaRoll.jpg",
@@ -44,8 +14,6 @@ let imagenes = [
   "img/PescadoAlaBrasa.jpg",
   "img/RamenDeCarne.jpg",
   "img/TacosConFrijoles.jpg",
-
-
 ];
 
 
@@ -81,6 +49,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(mostrarSiguienteImagen, 3000)
 });
+
+
+//EVENTO PARA EL NAVEGADOR. CUANDO SCROLLEAS SE VUELVE COLOR SOLIDO
+
+document.addEventListener('scroll', function() {
+  var header = document.querySelector('header');
+
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 50) {
+      header.style.backgroundColor = '#1e1f22';
+  } else {
+      header.style.backgroundColor = 'transparent';
+     
+  }
+
+  
+
+});
+
 
 
 

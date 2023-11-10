@@ -23,16 +23,6 @@ body{
     margin: 0 auto;
 }
 
-/* h1{
-    background-color: #1e42ae;
-    color: black;
-    font-family: var(--fuentePrincipal);
-
-}
-
-.h2{
-    color: aqua;
-} */
 
 /* ESTILO DEL ICONO DE LA FLECHA QUE SCROLLEA */
 #scrolltotop {
@@ -60,22 +50,37 @@ body{
   
 /*ESTILO DEL NAVEGADOR-HEADER*/
 
+header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
 .navegador{
     
-    background-color:var(--colorNegro);
+    /* background-color:var(--colorNegro); */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; 
     /* margin-top: 40px; */
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    padding-top: 10px;
+    font-size: large;
+    font-weight: 800;
+
 }
-
-/* @media (max-width: 1140px){
-    .navegedor{
-
-
+ 
+@media (max-width:1140px){
+    .navegador{
+        visibility: hidden;
+        
+    
     }
-} */
+} 
+
+
 
 .carta {
     display: flex;
@@ -92,6 +97,7 @@ body{
 .navegador img {
     height: 120px;
     width: 120px;
+ 
 }
 
 .horario{
@@ -106,6 +112,8 @@ body{
     color: var(--colorBlanco);
     text-decoration: none;
 }
+
+
 
 
 /* ESTILO DEL CARROUSEL DE IMAGENES ¡¡MAIN!! */
@@ -140,18 +148,16 @@ body{
 
 #imagen {
     
-    height: 600px;
+    height: 800px;
     object-fit: cover; /* Para ajustar la imagen sin distorsionarla */
     object-position: center center; 
     /* border-radius: 20px 10px 30px 5px; */
     animation: slideIn 1s;
     margin-top: -80px;
-     
-
+    
 }
 
-
-
+/* Efecto de transicion */
 @keyframes slideIn {
     from {
       transform: translateX(-100%); /* Empieza fuera de la pantalla a la izquierda */
@@ -161,27 +167,68 @@ body{
     }
   }
 
+/* RESPOSIVE MAIN CARRUSEL IMAGENES */
+@media(min-width:1140px){
+    .contenedorSlider{
+        height: 930px;
+    }
+   
+}
+/* @media (min-width:768px) and (max-width: 1140px){
+    #imagen {
+        max-height: 100%;
+    }
+} */
+
 
 /* PRUEBA FONDO TRANSPARENCIAS */
-.prueba {
-    background-image: url(../img/plantas_fondob&w.jpg);
-    height: 1000px;
+.compromisoTodo{
+    background-image: url(../img/fondo_plantas_transp.png);
+    height: 900px;
+    display: block;
+
 }
-.prueba>div>h2{
+
+.compromisoTitulo{
     font-family: var(--fuentePrincipal);
-    font-size: 6rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    color: var(--colorDorado);
+    /* align-items: flex-end; */
+    color: var(--colorOcre);
+    text-decoration:underline var(--colorDorado);
 }
-.prueba p{
-    color: var(--colorDorado);
+.compromisoMensaje{
+    color: var(--colorOcre);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top:-50px;
     text-align: center;
-    padding: 100px;
-    font-family: var(--fuenteSecundaria);
-    font-size: 4rem;
+
+    
 }
+
+/* @media(max-width:780px){
+    .compromiso{
+
+    }
+    .compromiso>div>h2{
+
+        font-size: 4rem;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .compromiso h3{
+        font-size: 2.5rem;
+    }
+} */
+
+
 
 /* ESTILO APARTADO BOTONES CARTA */
 .contenedorCarta{
@@ -212,7 +259,25 @@ body{
 }
 
 
+@media (min-width: 768px) and (max-width: 1140px) {
 
+.contenedorCarta{
+    margin: 100px 0px;
+}
+.cartapdf {
+    justify-content: space-around; 
+    
+}
+
+.cartapdf > a {
+    display: flex;
+    margin: 0 25px; /* Ajusta el margen entre los enlaces */
+    padding: 10px;
+    /* font-size: 1rem; */
+    text-align: center;
+}
+
+}
 
 
 
@@ -228,8 +293,8 @@ body{
   }
   
   .carousel-container {
-    overflow: hidden; 
-    position: relative;
+    /* overflow: hidden; 
+    position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,19 +548,15 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--colorDorado);
-    padding: 20px;
-    border-radius: 5px;
+    background-color: var(--colorBlanco);
+    padding: 30px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    font-family: var(--fuenteSecundaria);
+    width: 500px;
  
   }
-
-  .form{
-
-    font-family: var(--fuenteSecundaria);
-  }
-
 
   /* ESTILO DE LA CRUZ PARA CERRAR */
   .close-popup {
@@ -505,5 +566,23 @@ button:hover {
     font-size: 30px;
     cursor:pointer;
   }
+  
+/* ESTILO DEL FORMULARIO */
+.formNombre{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    font-family: var(--fuenteSecundaria);
+}
+.form{
+    font-family: var(--fuentePrincipal);
+}
 
-
+/* RESPONSIVE ICONO TLF */
+@media (min-width:1140px){
+    #toform {
+        bottom: 40%; /* Ajusta la posición vertical */
+        right: 20px; /* Ajusta la posición horizontal */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    }
+}

@@ -67,8 +67,7 @@
             </div>
             <div>
                 <!-- LOGO (QUE NOS RECARGUE LA PAGINA)¿PODEMOS HACER QUE SOBRESALGA UN POCO DEL HEADER PARA QUE SE VEA MEJOR? -->
-                <a href="http://127.0.0.1:5500/ProyectoPersonal/indexpp.html"><img src="./img/logo-removebg-preview.png"
-                        alt="logo_kokoro_latino"></a>
+                <a class="logonav" href="#"><img src="./img/logo-removebg-preview.png" alt="logo_kokoro_latino"></a>
             </div>
             <!--ANCLA PARA SCROLLEAR HACIA ABAJO -->
             <!-- CONTACTO (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA) -->
@@ -117,20 +116,42 @@
         </div>
 
 
-        <section class="prueba">
+        <section>
 
             <!-- BREVE TEXTO MISION Y VISION DEL RESTAURANTE, NUESTRO COMPROMISO EJ ECOLOGICO, CARTA VEGANA,  -->
-            <div>
-                <h2>Nuestro compromiso</h2>
-                <p>En un restaurante ecológico con una carta vegana, la ética es el corazón y alma de su filosofía
-                    culinaria. Este tipo de establecimiento se dedica a promover la sostenibilidad y el respeto por el
-                    medio ambiente, al mismo tiempo que celebra la vida animal y la salud de los comensales. Desde la
-                    elección de ingredientes sostenibles y locales hasta la creación de platos veganos que no contienen
-                    ningún producto de origen animal, cada aspecto de este restaurante se enfoca en prácticas éticas y
-                    responsables. La gestión de residuos, el uso de energías limpias y la concienciación de los clientes
-                    sobre sus elecciones alimenticias son parte integral de su misión. En este restaurante, la ética y
-                    la sostenibilidad se combinan para brindar una experiencia culinaria deliciosa y compasiva, donde
-                    cada bocado es una contribución a un mundo mejor.</p>
+            <div class="compromisoTodo">
+                <div class="compromisoTitulo">
+                    <h2>Nuestro compromiso</h2>
+                </div>
+                <div class="compromisoMensaje">
+                    <h3>En este restaurante nos dedicamos a
+                        <br>
+                        promover la sostenibilidad
+                        <br>
+                        y el respeto por el medio ambiente
+                        <br>
+                        a través de la elección de
+                        <br>
+                        ingredientes locales
+                        <br>
+                        y la creación de platos veganos.
+                        <br>
+                        La gestión de los residuos,
+                        <br>
+                        el uso de energías limpias
+                        <br>
+                        y la concienciación de los clientes
+                        <br>
+                        sobre sus elecciones alimenticias
+                        <br>
+                        son parte integral de esta visión.
+                        <br>
+                        En este restaurante cada bocado
+                        <br>
+                        es una contribución a un mundo mejor.
+                    </h3>
+                </div>
+
             </div>
         </section>
 
@@ -146,8 +167,8 @@
         <div class="contenedorCarta">
             <div class="cartapdf">
                 <!-- <a href="">Menu del dia</a> -->
-                <a href="">Carta en pdf</a>
-                <a href="">Carta de bebidas</a>
+                <a href="#">Carta en pdf</a>
+                <a href="#">Carta de bebidas</a>
                 <a href="#">Carta de alergénos</a>
             </div>
         </div>
@@ -377,31 +398,30 @@
             </a>
         </div>
 
-<!-- FORMULARIO + LA X PARA CERRAR EL FORMULARIO -->
+        <!-- FORMULARIO + LA X PARA CERRAR EL FORMULARIO -->
 
         <div id="popup-container" class="popup">
             <div class="popup-content">
                 <span class="close-popup" id="close-popup">&times;</span>
-                <form action="procesar.php" method="POST" class="form">
+                <form class="form">
                     <fieldset>
-                        <legend>Formulario de Contacto</legend>
-                        <label for="nombre">Nombre *:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <legend>Formulario de contacto</legend>
+                        <div class="formNombre">
+                            <label>Nombre y Apellidos *</label>
+                            <input id="Nombre" type="text" placeholder="Escribe aquí tu nombre y apellidos" required>
+                        </div>
                         <br>
-
-                        <label for="telefono">Teléfono *:</label>
-                        <input type="tel" id="telefono" name="telefono">
+                        <label>Telefono *</label>
+                        <input id="Tlf" type="tlf" placeholder="Escribe aquí tu telefono" required>
                         <br>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label>Correo </label>
+                        <input id="Email" type="email" placeholder="Escribe aquí tu correo">
                         <br>
-
-                        <label for="comentario">Comentario:</label>
-                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                        <label>Comentarios</label>
+                        <input id="Comentario" type="comentario" placeholder="Escribe aquí tu comentario">
                         <br>
-
                         <input type="submit" value="Enviar">
+
                     </fieldset>
                 </form>
             </div>

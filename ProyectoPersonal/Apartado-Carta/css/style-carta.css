@@ -13,7 +13,7 @@
  }
  
  body{
-     background-color: black;
+     background-color: var(--colorNegro);
      color: var(--colorDorado);
      font-size: 16px;
  }
@@ -94,8 +94,59 @@
 }
 
 
+/* ESTILOS CATEGORIAS  */
+
+.seccionCategorias{
+    display: flex;
+}
+
+.categoriasIzq a{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: var(--fuenteSecundaria);
+    color: var(--colorDorado);
+    text-decoration: none;
+}
+
+.categoriasIzq a:hover{
+    color: var(--colorOcre);
+}
+
+.categoriasDer{
+    margin-left: 50px;
+    
+}
+
+.categoriasDer h2{
+    font-family: var(--fuentePrincipal);
+}
+
+.categoriasDer>div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.categoriasDer h3{
+    text-transform: uppercase;
+}
+
+.categoriasDer h4{
+    text-transform: capitalize;
+}
+
+.entrantes>div{
+    display: flex;
+    justify-content: space-between;
+}
 
 
+
+ img{
+height: 30%;
+width: 30%;
+}
 
 
 
@@ -240,3 +291,5 @@
     color: var(--colorDorado);
     padding:10px
 }
+
+
