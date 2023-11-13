@@ -60,6 +60,7 @@ document.addEventListener('scroll', function() {
 
   if (scrollPosition > 50) {
       header.style.backgroundColor = '#1e1f22';
+
   } else {
       header.style.backgroundColor = 'transparent';
      
@@ -67,6 +68,21 @@ document.addEventListener('scroll', function() {
 
   
 
+});
+
+
+document.addEventListener('scroll', function() {
+  var header = document.querySelector('header');
+  var scrollPosition = window.scrollY;
+
+  // Verificar si el dispositivo es de escritorio
+  if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+    if (scrollPosition > 50) {
+      header.style.backgroundColor = '#1e1f22';
+    } else {
+      header.style.backgroundColor = 'transparent';
+    }
+  }
 });
 
 
