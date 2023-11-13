@@ -53,37 +53,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //EVENTO PARA EL NAVEGADOR. CUANDO SCROLLEAS SE VUELVE COLOR SOLIDO
 
-document.addEventListener('scroll', function() {
-  var header = document.querySelector('header');
+// document.addEventListener('scroll', function() {
+//   var header = document.querySelector('header');
 
-  var scrollPosition = window.scrollY;
+//   var scrollPosition = window.scrollY;
 
-  if (scrollPosition > 50) {
-      header.style.backgroundColor = '#1e1f22';
+//   if (scrollPosition > 50) {
+//       header.style.backgroundColor = '#1e1f22';
+      
 
-  } else {
-      header.style.backgroundColor = 'transparent';
+//   } else {
+//       header.style.backgroundColor = 'transparent';
      
-  }
+//   }
 
-  
 
-});
-
+// });
 
 document.addEventListener('scroll', function() {
   var header = document.querySelector('header');
   var scrollPosition = window.scrollY;
 
-  // Verificar si el dispositivo es de escritorio
-  if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-    if (scrollPosition > 50) {
-      header.style.backgroundColor = '#1e1f22';
-    } else {
-      header.style.backgroundColor = 'transparent';
-    }
+  // Verificar si no es un dispositivo móvil y el ancho de la ventana es mayor o igual a 1140px
+  if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && window.innerWidth >= 1140 && scrollPosition > 50) {
+    header.style.backgroundColor = '#1e1f22';
+  } else {
+    header.style.backgroundColor = 'transparent';
   }
 });
+
+
 
 
 
