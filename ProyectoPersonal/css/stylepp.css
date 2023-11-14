@@ -74,6 +74,8 @@ header {
     padding-top: 10px;
     font-size: large;
     font-weight: 800;
+    gap: 100px;
+    align-items: center;
 
 }
 
@@ -98,7 +100,7 @@ header {
 }
 
 
-.carta {
+/* .carta {
     display: flex;
     gap: 100px;
     align-items: center;
@@ -108,7 +110,7 @@ header {
     color: var(--colorBlanco);
     font-family: var(--fuentePrincipal);
     text-decoration: none;
-}
+} */
 
 .navegador img {
     height: 120px;
@@ -116,7 +118,7 @@ header {
 
 }
 
-.horario {
+/* .horario {
     display: flex;
     gap: 100px;
     align-items: center;
@@ -127,7 +129,7 @@ header {
     font-family: var(--fuentePrincipal);
     color: var(--colorBlanco);
     text-decoration: none;
-}
+} */
 
 
 @media(max-width:1140px) {
