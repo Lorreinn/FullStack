@@ -36,7 +36,7 @@
 
 <body>
     <!-- Aqui tenemos la flecha que tiene un ancla al navegador -->
-    
+
 
     <!-- <section>
         <h1>HENLOOO</h1> ESTO HAY QUE ELIMINARLO CUANDO TERMINEMOS CON LAS PRUEBAS!!!!
@@ -74,17 +74,17 @@
 
     <main>
         <div id="scrolltotop">
-        <a href="#" id="scrolltotoplink">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up-filled" width="35"
-                height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                    d="M10.586 3l-6.586 6.586a2 2 0 0 0 -.434 2.18l.068 .145a2 2 0 0 0 1.78 1.089h2.586v7a2 2 0 0 0 2 2h4l.15 -.005a2 2 0 0 0 1.85 -1.995l-.001 -7h2.587a2 2 0 0 0 1.414 -3.414l-6.586 -6.586a2 2 0 0 0 -2.828 0z"
-                    stroke-width="0" fill="currentColor"></path>
-            </svg>
-        </a>
-    </div>
+            <a href="#" id="scrolltotoplink">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up-filled"
+                    width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M10.586 3l-6.586 6.586a2 2 0 0 0 -.434 2.18l.068 .145a2 2 0 0 0 1.78 1.089h2.586v7a2 2 0 0 0 2 2h4l.15 -.005a2 2 0 0 0 1.85 -1.995l-.001 -7h2.587a2 2 0 0 0 1.414 -3.414l-6.586 -6.586a2 2 0 0 0 -2.828 0z"
+                        stroke-width="0" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
         <!-- EL NAVEGADOR SE TIENE QUE FUSIONAR CON EL CARROUSEL Y CUANDO SCROLLEAS HACÍA ABAJO YA SE DESPEGA -->
         <!-- Galería de imágenes CARRUSEL DE IMAGENES DE FONDO -->
         <div class="contenedorSlider">
@@ -407,23 +407,32 @@
                 <span class="close-popup" id="close-popup">&times;</span>
                 <form class="form">
                     <fieldset>
-                        <legend>Formulario de contacto</legend>
-                        <div class="formNombre">
-                            <label>Nombre y Apellidos *</label>
-                            <input id="Nombre" type="text" placeholder="Escribe aquí tu nombre y apellidos" required>
+                        
+                            <legend>Formulario de contacto</legend>
+                            <div class="formEntero">
+                            <div class="formNombre">
+                                <label>Nombre y Apellidos *</label>
+                                <input id="Nombre" type="text" placeholder="Escribe aquí tu nombre y apellidos"
+                                    required>
+                            </div>
+                            <br>
+                            <div class="formTlf">
+                                <label>Telefono *</label>
+                                <input id="Tlf" type="tlf" placeholder="Escribe aquí tu telefono" required>
+                            </div>
+                            <br>
+                            <div class="formEmail">
+                                <label>Correo </label>
+                                <input id="Email" type="email" placeholder="Escribe aquí tu correo">
+                            </div>
+                            <br>
+                            <div class="formComentarios">
+                                <label>Comentarios</label>
+                                <input id="Comentario" type="comentario" placeholder="Escribe aquí tu comentario">
+                            </div>
+                            <br>
+                            <input type="submit" value="Enviar">
                         </div>
-                        <br>
-                        <label>Telefono *</label>
-                        <input id="Tlf" type="tlf" placeholder="Escribe aquí tu telefono" required>
-                        <br>
-                        <label>Correo </label>
-                        <input id="Email" type="email" placeholder="Escribe aquí tu correo">
-                        <br>
-                        <label>Comentarios</label>
-                        <input id="Comentario" type="comentario" placeholder="Escribe aquí tu comentario">
-                        <br>
-                        <input type="submit" value="Enviar">
-
                     </fieldset>
                 </form>
             </div>

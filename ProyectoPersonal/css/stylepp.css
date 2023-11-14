@@ -657,16 +657,21 @@ button:hover {
 }
 
 /* ESTILO DEL FORMULARIO */
-.formNombre {
+
+.formEntero{
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formNombre .formTlf .formEmail .formComentarios{
     display: flex;
     justify-content: center;
-    padding: 10px;
+    /* padding: 10px; */
     font-family: var(--fuenteSecundaria);
 }
 
-.form {
-    font-family: var(--fuentePrincipal);
-}
 
 /* RESPONSIVE ICONO TLF */
 @media (min-width:1140px) {
