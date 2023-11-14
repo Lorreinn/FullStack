@@ -77,10 +77,12 @@ header {
     gap: 100px;
     align-items: center;
 
+
 }
 
 
-.navegador>div>a{
+.navegador a{
+
     color: var(--colorBlanco);
     font-family: var(--fuentePrincipal);
     text-decoration: none;
@@ -98,7 +100,10 @@ header {
 .abrirMenu {
     display: none;
 }
-
+.navegador{
+    height: 120px;
+    border-radius: 20px;
+}
 
 /* .carta {
     display: flex;
@@ -113,8 +118,13 @@ header {
 } */
 
 .navegador img {
-    height: 120px;
-    width: 120px;
+    max-width: 180px; /* Tamaño máximo del logo */
+    height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+    display: block; /* Asegura que las propiedades de ancho y alto funcionen correctamente */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 5px; /* Ajusta la posición vertical del logo */
+    left: 50%; /* Centra el logo horizontalmente */
+    transform: translateX(-50%);
 
 }
 
@@ -137,33 +147,28 @@ header {
         display: block;
     }
 
-    .logonav {
-        display: none;
+    .navegador{
+        display:inline-block;
+        background-color:#1e1f22;
+        padding: 40px 20px;
+    
     }
-
-    .navegador {
+    .navegador>a {
+        display:flex;
         flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-      
+        justify-content: space-between;
+        align-items: center;
+    
     }
 
-    .carta {
-        display: flex;
-        flex-direction: column;
-        right: 0;
+} 
 
-    }
-
-    .horario {
-        display: flex;
-        flex-direction: column;
-        right: 0;
-    }
-}
   
-
+/* @media(max-width:768){
+     .logonav {
+       
+    }
+} */
 
 
 /* ESTILO DEL CARROUSEL DE IMAGENES ¡¡MAIN!! */
@@ -439,7 +444,7 @@ button:hover {
     background-repeat: no-repeat;
 }
 
-
+@media(max-width:1140){}
 /* ESTILO HORARIOS */
 .contenedorHorario {
     background-color: rgb(179, 172, 172, 0.8);

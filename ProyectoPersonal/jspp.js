@@ -88,6 +88,8 @@ document.addEventListener('scroll', function() {
 
 
 
+
+
 //INTERACCIÓN CARRUSEL DE RESEÑAS
 
 const reviews = document.querySelectorAll('.review');

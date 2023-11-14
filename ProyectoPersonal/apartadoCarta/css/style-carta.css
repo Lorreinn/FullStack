@@ -132,23 +132,34 @@
 
 .categoriasDer h3{
     text-transform: uppercase;
+    display: inline;
 }
 
 .categoriasDer a{
-
+    background-color:white;
+    color: var(--colorDorado);
+    border: 6px solid var(--colorDorado);
+    padding: 14px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fuenteSecundaria);
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: inline-block;
 }
 
-.categoriasDer .plato1{
+.categoriasDer a:hover{
+    color: var(--colorOcre);
+    background-color: var(--colorDorado);
+}
+
+.categoriasDer .descripcionPlatos{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
     justify-content: center;
 }
 
-
-/* .categoriasDer h4{
-    
-} */
 
 .categoriasDer img{
     height: 25%;
@@ -159,12 +170,19 @@
     margin-bottom: 20px;
 }
     
-.entrantes>div{
+.platos>div{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin: 20px;
     background-color: var(--colorOcre);
 }
+
+/* .mariscos>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: var(--colorOcre);
+} */
 
 
 
