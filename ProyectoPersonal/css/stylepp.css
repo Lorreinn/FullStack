@@ -76,6 +76,8 @@ header {
     font-weight: 800;
     gap: 100px;
     align-items: center;
+    height: 120px;
+    border-radius: 20px;
 
 
 }
@@ -100,10 +102,7 @@ header {
 .abrirMenu {
     display: none;
 }
-.navegador{
-    height: 120px;
-    border-radius: 20px;
-}
+
 
 /* .carta {
     display: flex;
@@ -148,27 +147,32 @@ header {
     }
 
     .navegador{
-        display:inline-block;
-        background-color:#1e1f22;
-        padding: 40px 20px;
-    
-    }
-    .navegador>a {
-        display:flex;
+        /* display:inline-block; */
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-    
+        background-color:#1e1f22;
+        padding: 40px 20px;
+        gap:0px;
+        width: 30%;
     }
+    
 
 } 
 
   
-/* @media(max-width:768){
-     .logonav {
-       
+@media(max-width:768px){
+    .navegador img {
+        max-width: 130px; /* Tamaño máximo del logo */
+        height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+        display: block; /* Asegura que las propiedades de ancho y alto funcionen correctamente */
+        position: absolute; /* Posicionamiento absoluto */
+        top: 5px; /* Ajusta la posición vertical del logo */
+        left: 80%; /* Centra el logo horizontalmente */
+        transform: translateX(-50%);
+    
     }
-} */
+}
 
 
 /* ESTILO DEL CARROUSEL DE IMAGENES ¡¡MAIN!! */
