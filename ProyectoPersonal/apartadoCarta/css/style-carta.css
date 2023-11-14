@@ -120,6 +120,7 @@
 
 .categoriasDer h2{
     font-family: var(--fuentePrincipal);
+
 }
 
 .categoriasDer>div{
@@ -141,6 +142,9 @@
     height: 25%;
     width: 25%;
     border-radius: 0.55rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
     
 .entrantes>div{

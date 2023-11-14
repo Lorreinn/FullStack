@@ -132,9 +132,7 @@ header {
 
 @media(max-width:1140px) {
     .abrirMenu {
-       display: block;
-       background:none;
-
+        display: block;
     }
 
     .logonav {
@@ -143,25 +141,28 @@ header {
 
     .navegador {
         flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        background-color: #1e1f22;
-
+        position: absolute;
+        top: 0;
+        right: 0;
+      
     }
 
     .carta {
         display: flex;
         flex-direction: column;
+        right: 0;
 
     }
 
     .horario {
         display: flex;
         flex-direction: column;
-
+        right: 0;
     }
-
 }
+  
+
+
 
 /* ESTILO DEL CARROUSEL DE IMAGENES ¡¡MAIN!! */
 
@@ -658,20 +659,32 @@ button:hover {
 
 /* ESTILO DEL FORMULARIO */
 
-.formEntero{
-    display:block;
+.formEntero {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-.formNombre .formTlf .formEmail .formComentarios{
+label {
     display: flex;
-    justify-content: center;
-    /* padding: 10px; */
+    font-family: var(--fuentePrincipal);
+    font-weight: 500;
+
+}
+
+input {
+    display: block;
+    width: 300px;
     font-family: var(--fuenteSecundaria);
 }
 
+form legend {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--colorOcre);
+
+}
 
 /* RESPONSIVE ICONO TLF */
 @media (min-width:1140px) {
