@@ -25,7 +25,34 @@
  }
 
 
+ /* ESTILO DEL ICONO DE LA FLECHA QUE SCROLLEA */
+#scrolltotop {
+    position: fixed;
+    bottom: 20px;
+    /* Ajusta la posición vertical */
+    right: 20px;
+    /* Ajusta la posición horizontal */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+#scrolltotoplink {
+    display: block;
+    padding: 10px;
+    background-color: var(--colorDorado);
+    color: var(--colorBlanco);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#scrolltotoplink:hover {
+    background-color: var(--colorOcre);
+}
+
+
  /*ESTILO DEL NAVEGADOR-HEADER*/
+ 
 
 .navegador{
     
@@ -92,6 +119,53 @@
     color: var(--colorBlanco);
     text-decoration: none;
 }
+
+/* CARRITO */
+
+/* Estilos específicos para el carrito según el diseño de tu página */
+
+#carrito {
+    background-color: var(--colorBlanco);
+    border: 1px solid var(--colorDorado);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #lista-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #lista-carrito th, #lista-carrito td {
+    border: 1px solid var(--colorDorado);
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #lista-carrito th {
+    background-color: var(--colorDorado);
+    color: var(--colorBlanco);
+  }
+  
+  .btn-2, .borrar-producto {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background-color: var(--colorDorado);
+    border: 1px solid var(--colorDorado);
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-2:hover, .borrar-producto:hover {
+    background-color: darken(var(--colorDorado), 10%); /* Puedes ajustar este porcentaje según tu preferencia */
+  }
+  
+  
 
 
 /* ESTILOS CATEGORIAS  */
@@ -162,7 +236,7 @@
 
 
 .categoriasDer img{
-    height: 25%;
+    height: 20%;
     width: 25%;
     border-radius: 0.55rem;
     margin-left: 20px;
@@ -177,6 +251,20 @@
     background-color: var(--colorOcre);
 }
 
+.bebidas{
+    text-align: center;
+
+}
+
+.bebidas img{
+    height: 30%;
+}
+
+.imgTartaCoco img{
+    height: 250px;
+    width: 480px;
+    
+}
 /* .mariscos>div{
     display: flex;
     justify-content: space-between;
@@ -329,3 +417,107 @@
 }
 
 
+/* ESTILO DEL ICONO DE TLF QUE POPEA UN FORMULARIO */
+#toform {
+    position: fixed;
+    bottom: 50%;
+    /* Ajusta la posición vertical */
+    right: 20px;
+    /* Ajusta la posición horizontal */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+.popupform {
+    display: block;
+    padding: 10px;
+    background-color: var(--colorDorado);
+    color: var(--colorNegro);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.popupform:hover {
+    background-color: var(--colorOcre);
+    color: var(--colorBlanco)
+}
+
+
+/* ESTILO DEL POP-UP */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILO DEL CONTENEDOR DEL POP-UP */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--colorBlanco);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    width: 500px;
+
+}
+
+/* ESTILO DE LA CRUZ PARA CERRAR */
+.close-popup {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ESTILO DEL FORMULARIO */
+
+.formEntero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    font-family: var(--fuentePrincipal);
+    font-weight: 500;
+
+}
+
+input {
+    display: block;
+    width: 300px;
+    font-family: var(--fuenteSecundaria);
+}
+
+form legend {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--colorOcre);
+
+}
+
+/* RESPONSIVE ICONO TLF */
+@media (min-width:1140px) {
+    #toform {
+        bottom: 40%;
+        /* Ajusta la posición vertical */
+        right: 20px;
+        /* Ajusta la posición horizontal */
+        z-index: 1000;
+        /* Asegura que esté por encima de otros elementos */
+    }
+}

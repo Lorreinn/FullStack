@@ -103,6 +103,10 @@ header {
     display: none;
 }
 
+.botonCerrar{
+    display: none;
+}
+
 
 /* .carta {
     display: flex;
@@ -127,6 +131,10 @@ header {
 
 }
 
+.logonavmovil{
+    display: none;
+}
+
 /* .horario {
     display: flex;
     gap: 100px;
@@ -142,12 +150,15 @@ header {
 
 
 @media(max-width:1140px) {
+
     .abrirMenu {
         display: block;
     }
-
+    .botonCerrar{
+        display: block;
+    }
+ 
     .navegador{
-        /* display:inline-block; */
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -155,13 +166,34 @@ header {
         padding: 40px 20px;
         gap:0px;
         width: 30%;
+
+        opacity: 0;
+        visibility: hidden;
     }
-    
+
+    .navegador.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .iconoAbrir{
+        height: 30px;
+        width: 30px;
+        
+    }
+
+    .iconoCerrar{
+        height: 12px;
+        width: 12px;
+
+    }
 
 } 
 
   
 @media(max-width:768px){
+
+
     .navegador img {
         max-width: 130px; /* Tamaño máximo del logo */
         height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */

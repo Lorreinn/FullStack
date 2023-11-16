@@ -46,33 +46,43 @@
     <!-- Aquí vamos a meter un navegador que nos va a acompañar según scrolleamos hacía abajo, y a la vez va a ser el encabezado de la pagina web, con el logo(que vamos a crear en canva) -->
 
     <header> <!--Le hemos puesto un id al header para utilizarlo como ancla-->
-        <button class="abrirMenu">Abrir</button>
-        <div class="navegador">
+        <a class="logonavmovil" href="index.html"><img src="./img/logo-removebg-preview.png"
+            alt="logo_kokoro_latino"></a>
+        <button class="abrirMenu" id="abrir"><svg xmlns="http://www.w3.org/2000/svg" class="iconoAbrir" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg></button>
+
+        <div class="navegador"  id="navegador">
+
+            <button class="botonCerrar" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" class="iconoCerrar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
             <!-- CARTA (QUE DIRIJA A OTRA PAGINA) -->
             <!-- <div class="carta"> -->
-                <a href="apartadoCarta/carta.html">Carta</a>
-                <a href="#contacto">Contacto</a>
-                <!--ANCLA PARA SCROLLEAR HACIA ABAJO ¡¡AÑADIR TRANSICIÓN SMOOTH!!-->
-                <!-- HORARIOS Y LOCALIZACIONES (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA AL FOOTER) -->
+
+            <a href="apartadoCarta/carta.html">Carta</a>
+            <a href="#contacto">Contacto</a>
+            <!--ANCLA PARA SCROLLEAR HACIA ABAJO ¡¡AÑADIR TRANSICIÓN SMOOTH!!-->
+            <!-- HORARIOS Y LOCALIZACIONES (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA AL FOOTER) -->
             <!-- </div> -->
             <div>
                 <!-- LOGO (QUE NOS RECARGUE LA PAGINA)¿PODEMOS HACER QUE SOBRESALGA UN POCO DEL HEADER PARA QUE SE VEA MEJOR? -->
-                <a class="logonav" href="index.html"><img src="./img/logo-removebg-preview.png" alt="logo_kokoro_latino"></a>
+                <a class="logonav" href="index.html"><img src="./img/logo-removebg-preview.png"
+                        alt="logo_kokoro_latino"></a>
             </div>
             <!--ANCLA PARA SCROLLEAR HACIA ABAJO -->
             <!-- CONTACTO (QUE DIRIJA A LA PARTE INFERIOR DE LA PAGINA) -->
 
             <!-- <div class="horario"> -->
-                <a href="#horarioAncla">Horario</a>
-                <a href="#localizaciones">Localizaciones</a>
+            <a href="#horarioAncla">Horario</a>
+            <a href="#localizaciones">Localizaciones</a>
 
             <!-- </div> -->
 
         </div>
 
+
     </header>
 
     <main>
+
+     <!-- Flecha que este situada en la parte inferior y que te scrollee atutomaticamente hacia arriba al darle click  -->
         <div id="scrolltotop">
             <a href="#" id="scrolltotoplink">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up-filled"
@@ -85,7 +95,11 @@
                 </svg>
             </a>
         </div>
+
+
         <!-- EL NAVEGADOR SE TIENE QUE FUSIONAR CON EL CARROUSEL Y CUANDO SCROLLEAS HACÍA ABAJO YA SE DESPEGA -->
+
+
         <!-- Galería de imágenes CARRUSEL DE IMAGENES DE FONDO -->
         <div class="contenedorSlider">
 
@@ -159,9 +173,9 @@
 
     </main>
 
-    <!-- Icono flotante (icono telefon) con el formulario de reservas, crear un pop con JavaScript-->
+   
 
-    <!-- Flecha que este situada en la parte inferior y que te scrollee atutomaticamente hacia arriba al darle click  -->
+   
 
     <!-- CARTA (BREVE RESUMEN O MENU DEL DIA DE LA CARTA QUE DIRIJA DIRECTAMENTE A LA CARTA) -->
 
@@ -407,9 +421,9 @@
                 <span class="close-popup" id="close-popup">&times;</span>
                 <form class="form">
                     <fieldset>
-                        
-                            <legend>Formulario de contacto</legend>
-                            <div class="formEntero">
+
+                        <legend>Formulario de contacto</legend>
+                        <div class="formEntero">
                             <div class="formNombre">
                                 <label>Nombre y Apellidos </label>
                                 <input id="Nombre" type="text" placeholder="Escribe aquí tu nombre y apellidos"
