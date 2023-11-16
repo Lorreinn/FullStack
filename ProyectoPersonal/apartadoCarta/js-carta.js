@@ -81,20 +81,23 @@ function vaciarCarrito() {
     carritoBody.innerHTML = ''; // Limpia la tabla en la página
 }
 
-// POP UP INICIO SECION Y REGISTRARSE
+
+  // POP UP FORMULARIO
 
 const showPopupLink = document.getElementById('show-popup-link');
-  const closePopup = document.getElementById('close-popup');
-  const popup = document.getElementById('popup-container');
+const closePopup = document.getElementById('close-popup');
+const popup = document.getElementById('popup-container');
 
-  showPopupLink.addEventListener('click', function (e) {
-    e.preventDefault();
-    popup.style.display = 'block';
-  });
+showPopupLink.addEventListener('click', function (e) {
+  e.preventDefault();
+  popup.style.display = 'block';
+});
 
-  closePopup.addEventListener('click', function () {
-    popup.style.display = 'none';
-  });
+closePopup.addEventListener('click', function () {
+  popup.style.display = 'none';
+});
+
+
 
 
 
@@ -103,27 +106,28 @@ const showPopupLink = document.getElementById('show-popup-link');
 //EVENTO PARA EL NAVEGADOR. CUANDO SCROLLEAS SE VUELVE COLOR SOLIDO
 
 
-document.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
-    var scrollPosition = window.scrollY;
+// document.addEventListener('scroll', function() {
+//     var header = document.querySelector('header');
+//     var scrollPosition = window.scrollY;
   
-    // Verificar si no es un dispositivo móvil y el ancho de la ventana es mayor o igual a 1140px
-    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && window.innerWidth >= 1140 && scrollPosition > 50) {
-      header.style.backgroundColor = '#1e1f22';
-    } else {
-      header.style.backgroundColor = 'transparent';
-    }
-  });
+//     // Verificar si no es un dispositivo móvil y el ancho de la ventana es mayor o igual a 1140px
+//     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && window.innerWidth >= 1140 && scrollPosition > 50) {
+//       header.style.backgroundColor = '#1e1f22';
+//     } else {
+//       header.style.backgroundColor = 'transparent';
+//     }
+//   });
   
-  const navegador = document.querySelector("#navegador");
-  const abrir = document.querySelector("#abrir");
-  const cerrar = document.querySelector("#cerrar");
+//   const navegador = document.querySelector("#navegador");
+//   const abrir = document.querySelector("#abrir");
+//   const cerrar = document.querySelector("#cerrar");
   
-  abrir.addEventListener("click", () => {
-    navegador.classList.add("visible");
-  });
+//   abrir.addEventListener("click", () => {
+//     navegador.classList.add("visible");
+//   });
   
-  cerrar.addEventListener("click", () => {
-    navegador.classList.remove("visible");
-  });
+//   cerrar.addEventListener("click", () => {
+//     navegador.classList.remove("visible");
+//   });
   
+

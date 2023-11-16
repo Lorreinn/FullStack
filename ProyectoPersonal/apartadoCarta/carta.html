@@ -35,8 +35,16 @@
     <!-- Aquí vamos a meter un navegador que nos va a acompañar según scrolleamos hacía abajo, y a la vez va a ser el encabezado de la pagina web, con el logo(que vamos a crear en canva) -->
 
     <header>
-        <div class="navegador">
+        
+<!-- 
+            <a class="logonavmovil" href="index.html"><img src="./img/logo-removebg-preview.png"
+                alt="logo_kokoro_latino"></a>
+            <button class="abrirMenu" id="abrir"><svg xmlns="http://www.w3.org/2000/svg" class="iconoAbrir" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg></button> -->
 
+    <div class="navegador">
+
+            <!-- <button class="botonCerrar" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" class="iconoCerrar" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></button>
+             -->
             <!-- LOGO (QUE NOS RECARGUE LA PAGINA)¿PODEMOS HACER QUE SOBRESALGA UN POCO DEL HEADER PARA QUE SE VEA MEJOR? -->
             <div>
                 <a href="../index.html"><img
@@ -70,12 +78,8 @@
             </div>
 
             <div class="registrarse">
-<<<<<<< HEAD
                 <a href="#"
-=======
-                <a href=""
->>>>>>> 4aa23906a0f511eaf01e4a599b7aebd24b8e53ee
-                    class="login">
+                <a href=""class="login">
                     Registrarse
                 </a>
             </div> -->
@@ -85,11 +89,14 @@
             <!-- <div>
                 <ul>
 
-                    <li class="submenu iconos">
-                        <a href="" class=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg></a>
-                        <img src="" id="img-carrito" alt="carrito">
+                    <li class="submenu iconos">--->
+                        <div class="iconos">
+                         <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                        </a>
+                        </div>
                         
-                        <div id="carrito">
+                       <!-- <div id="carrito">
 
                             <tr>
 
@@ -135,8 +142,8 @@
 
 
 
-            </div> -->
-
+            </div>
+ -->
 
 
 
@@ -148,6 +155,10 @@
     </header>
 
     <Main>
+
+
+        <!-- FLECHA PARA HACER SCROLL HACIA ARRIBA -->
+
 
         <div id="scrolltotop">
             <a href="#" id="scrolltotoplink">
@@ -174,7 +185,7 @@
         <!-- PARTE IZQUIERDA ----- LISTA DE PLATOS ORDENADO POR CATEGORIAS  -->
 
         <div class="categoriasIzq">
-            <h2><a href="#menu">menu</a></h2>
+            <h2><a href="">menu</a></h2>
 
             
                 <h3><a href="#entrantes">entrantes</a></h3>
@@ -197,7 +208,7 @@
 
                 <h2 id="entrantes">Entrantes:</h2>
 
-                    <div id="producto">
+                    <div class="products">
                         <img src="img/EnsaladaAsiatica.jpg" alt="">
                            <div class="descripcionPlatos">
                                <h3>Ensalada Asiatica:</h3>
@@ -206,9 +217,9 @@
                                    y deliciosa que puede adaptarse a una variedad de preferencias dietéticas, incluyendo
                                    opciones vegetarianas y veganas. La versatilidad de la ensalada asiática la convierte en una
                                    elección popular para aquellos que buscan una comida ligera y llena de sabor.</h4>
-                                   <p class="precio">15 €</p>
+                                   <p class="precio">7 €</p>
                                 <div>
-                                 <a href="#" class="agregar-carrito">añadir</a>
+                                 <a href="#" >añadir</a>
                                 </div>
                                    
                            </div>
@@ -221,6 +232,7 @@
                                <h4>Son conocidas por su textura crujiente en la parte inferior y su interior
                                    jugoso y sabroso. Su sabor se ve realzado por la deliciosa salsa de inmersión y los
                                    ingredientes frescos que se utilizan en el relleno</h4>
+                                   <p class="precio">10 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -236,6 +248,7 @@
                                     versatilidad de los nachos permite una amplia gama de variaciones, desde los nachos
                                     simples con queso hasta los nachos totalmente cargados con carne, guacamole y salsa
                                     picante.</h4>
+                                    <p class="precio">5 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -249,6 +262,7 @@
                                 <h4>Son conocidos por su sabor suave y dulce en el interior, con una textura
                                     crujiente y dorada en el exterior. Se pueden disfrutar solos o con salsas adicionales, como
                                     ketchup, ají o guacamole.</h4>
+                                    <p class="precio">7 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -263,6 +277,7 @@
                                     opción de añadir proteínas y verduras de tu elección. La versatilidad de los ingredientes y
                                     las salsas de acompañamiento permite una amplia gama de variaciones regionales y
                                     personales.</h4>
+                                    <p class="precio">8 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -274,6 +289,7 @@
                             <div class="descripcionPlatos">
                                 <h3>tacos con frijoles</h3>
                                 <h4>Son conocidos por su sabor reconfortante, su textura suave y cremosa de los frijoles, y la combinación de ingredientes frescos y sabrosos en la guarnición. Son una opción popular para vegetarianos y veganos, pero también son apreciados por amantes de la carne que disfrutan de la versatilidad y el sabor de esta alternativa sin carne.</h4>
+                                <p class="precio">10 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -300,6 +316,7 @@
                                     <h4>Es una deliciosa combinación de sabores, desde la ternura del pollo
                                         sazonado hasta la frescura de las verduras y la cremosidad de los frijoles y el queso.
                                         Puedes personalizarlo según tus preferencias, haciendo que sea suave o picante.</h4>
+                                        <p class="precio">12 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -314,6 +331,7 @@
                                         picantes, así como por su mezcla de texturas suaves y crujientes. La combinación de fideos
                                         de arroz con mariscos frescos y salsa Pad Thai crea una experiencia culinaria deliciosa y
                                         satisfactoria.</h4>
+                                        <p class="precio">15 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -325,6 +343,7 @@
                                 <div class="descripcionPlatos">
                                     <h3>pescado a la brasa</h3>
                                     <h4>Es apreciado por su sabor ahumado, su textura tierna y su sencillez. se destaca por su sabor natural de mariscos y se realza con los sazonadores utilizados en la marinada.</h4>
+                                    <p class="precio">18 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -338,6 +357,7 @@
                                     <h4>El ceviche mixto es conocido por su sabor fresco y vibrante, con un
                                         equilibrio perfecto entre la acidez del cítrico, la frescura de los mariscos y la intensidad de
                                         los sabores de la cebolla y el cilantro.</h4>
+                                        <p class="precio">15 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -353,6 +373,7 @@
                                         combinación de salmón, aguacate y pepino en el interior crea un equilibrio perfecto entre
                                         el sabor suave y la cremosidad. La adición de arroz sazonado y alga nori proporciona un
                                         contraste interesante en sabor y textura.</h4>
+                                        <p class="precio">17 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -367,6 +388,7 @@
                                         combinación de salmón, aguacate y pepino en el interior crea un equilibrio perfecto entre
                                         el sabor suave y la cremosidad. La adición de arroz sazonado y alga nori proporciona un
                                         contraste interesante en sabor y textura.</h4>
+                                        <p class="precio">20 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -385,6 +407,7 @@
                                 <div class="descripcionPlatos">
                                     <h3>pad thai de ternera</h3>
                                     <h4>Es conocido por su equilibrio de sabores agridulces, salados y picantes, así como por su mezcla de texturas suaves y crujientes. La combinación de fideos de arroz con ternera tierna y salsa Pad Thai crea una experiencia culinaria deliciosa y satisfactoria.</h4>
+                                    <p class="precio">15 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -396,6 +419,7 @@
                                 <div class="descripcionPlatos">
                                     <h3>ramen de carne</h3>
                                     <h4>Es conocido por su caldo rico y sabroso, sus fideos de textura suave y sus ingredientes variados que aportan sabor y frescura. Puedes elegir fideos de trigo al estilo japonés, que pueden ser frescos o secos.</h4>
+                                    <p class="precio">17 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -407,6 +431,7 @@
                                 <div class="descripcionPlatos">
                                     <h3>arroz a la criolla</h3>
                                     <h4>El arroz con carne es un plato satisfactorio que combina los sabores de la carne, las verduras y el arroz en una comida completa. El componente principal es el arroz. Puede ser arroz blanco, arroz integral, arroz jazmín o cualquier otro tipo de arroz, según la preferencia. Las opciones de carne cerdo, pollo, cordero.</h4>
+                                    <p class="precio">18 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -418,6 +443,7 @@
                                 <div class="descripcionPlatos">
                                     <h3>tacos de ternera</h3>
                                     <h4>Son conocidos por su sabor sabroso y su combinación de ingredientes frescos y especiados. La carne de res sazonada se mezcla con las guarniciones, creando una armonía de sabores y texturas.</h4>
+                                    <p class="precio">10 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -431,6 +457,7 @@
                                     <h4>Es apreciada por su sabor ahumado, su exterior crujiente y su interior
                                         tierno y jugoso. La carne a la brasa puede incluir una variedad de cortes, como chuletas de
                                         cerdo, costillas, pollo, pavo, res (como chuletas de ternera o filetes) o incluso pescado.</h4>
+                                        <p class="precio">18 €</p>
                                     <div>
                                      <a href="#" class="agregar-carrito">añadir</a>
                                     </div>
@@ -452,6 +479,7 @@
                             <div class="descripcionPlatos">
                                 <h3>Tarta de Coco y Lichi</h3>
                                 <h4>Una tarta o pastel que combina el coco con trozos de lichi, fruta típica de Asia. La dulzura y frescura del lichi se mezcla con la cremosidad del coco para crear un postre deliciosamente único.</h4>
+                                <p class="precio">8 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -463,6 +491,7 @@
                             <div class="descripcionPlatos">
                                 <h3>Flan de Té Verde</h3>
                                 <h4>El flan tradicional se infunde con té verde matcha, lo que le otorga un sabor distintivo y un toque asiático. Suele servirse con una capa de caramelo o frutas frescas.</h4>
+                                <p class="precio">7 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -487,6 +516,7 @@
                         <img src="img/andrey-ilkevich-Qvnohn4GyJA-unsplash.jpg" alt="">
                             <div class="descripcionPlatos">
                                 <h3>coca cola</h3>
+                                <p class="precio">2,5 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -497,6 +527,7 @@
                         <img src="img/shardar-tarikul-islam-oUUBhKsQtFo-unsplash.jpg" alt="">
                             <div class="descripcionPlatos">
                                 <h3>sprite</h3>
+                                <p class="precio">2,5 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -507,6 +538,7 @@
                         <img src="img/brett-jordan-aKYu-H5pHJY-unsplash.jpg" alt="">
                             <div class="descripcionPlatos">
                                 <h3>fanta</h3>
+                                <p class="precio">2,5 €</p>
                                 <div>
                                  <a href="#" class="agregar-carrito">añadir</a>
                                 </div>
@@ -646,7 +678,7 @@
     </footer>
 
     <!-- ICONO DEL TLF DONDE POPEA EL FORMULARIO -->
-    <div>
+    <!-- <div>
         <div id="toform">
             <a href="#" class="popupform" id="show-popup-link">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="50"
@@ -659,11 +691,11 @@
                     </path>
                 </svg>
             </a>
-        </div>
+        </div> -->
 
         <!-- FORMULARIO + LA X PARA CERRAR EL FORMULARIO -->
 
-        <div id="popup-container" class="popup">
+        <!-- <div id="popup-container" class="popup">
             <div class="popup-content">
                 <span class="close-popup" id="close-popup">&times;</span>
                 <form class="form">
@@ -698,7 +730,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 

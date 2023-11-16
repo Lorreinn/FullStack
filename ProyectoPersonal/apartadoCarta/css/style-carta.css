@@ -10,6 +10,7 @@
  }
  html{
      font-size: 62.5%;
+     scroll-behavior:smooth;
  }
  
  body{
@@ -53,6 +54,13 @@
 
  /*ESTILO DEL NAVEGADOR-HEADER*/
  
+ header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+
+}
 
 .navegador{
     
@@ -61,7 +69,28 @@
     flex-direction: row;
     justify-content: space-evenly; 
     /* margin-top: 40px; */
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    padding-top: 10px;
+    font-size: large;
+    font-weight: 800;
+    gap: 100px;
+    align-items: center;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.navegador a{
+    color: var(--colorDorado);
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+}
+
+.abrirMenu {
+    display: none;
+}
+
+.botonCerrar{
+    display: none;
 }
 
 .carta {
@@ -70,11 +99,7 @@
     align-items: center;
 }
 
-.carta a{
-    color: var(--colorBlanco);
-    font-family: var(--fuentePrincipal);
-    text-decoration: none;
-}
+
 
 .navegador img {
     height: 120px;
@@ -88,11 +113,7 @@
    
 }
 
-.horario a{
-    font-family: var(--fuentePrincipal);
-    color: var(--colorBlanco);
-    text-decoration: none;
-}
+
 
 .iniciarSesion{
     display: flex;
@@ -101,11 +122,6 @@
    
 }
 
-.iniciarSesion a{
-    font-family: var(--fuentePrincipal);
-    color: var(--colorBlanco);
-    text-decoration: none;
-}
 
 .registrarse{
     display: flex;
@@ -114,11 +130,69 @@
    
 }
 
-.registrarse a{
-    font-family: var(--fuentePrincipal);
-    color: var(--colorBlanco);
-    text-decoration: none;
-}
+/* .logonavmovil{
+    display: none;
+} */
+
+/* @media(max-width:1140px) {
+
+    .abrirMenu {
+        display: block;
+    }
+    .botonCerrar{
+        display: block;
+    }
+ 
+    .navegador{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#1e1f22;
+        padding: 40px 20px;
+        gap:0px;
+        width: 30%;
+
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .navegador.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .iconoAbrir{
+        height: 30px;
+        width: 30px;
+        
+    }
+
+    .iconoCerrar{
+        height: 12px;
+        width: 12px;
+
+    }
+
+
+
+} 
+
+  
+@media(max-width:768px){
+
+
+    .navegador img {
+        max-width: 130px; /* Tamaño máximo del logo 
+        height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción 
+        display: block; /* Asegura que las propiedades de ancho y alto funcionen correctamente 
+        position: absolute; /* Posicionamiento absoluto 
+        top: 5px; /* Ajusta la posición vertical del logo 
+        left: 80%; /* Centra el logo horizontalmente 
+        transform: translateX(-50%);
+    
+    }
+} 
+
 
 /* CARRITO */
 
@@ -172,6 +246,7 @@
 
 .seccionCategorias{
     display: flex;
+    padding-top: 150px;
 }
 
 .categoriasIzq a{
@@ -439,7 +514,7 @@
 }
 
 .popupform:hover {
-    background-color: var(--colorOcre);
+    background-color: var(--colorNegro);
     color: var(--colorBlanco)
 }
 
@@ -510,7 +585,7 @@ form legend {
 
 }
 
-/* RESPONSIVE ICONO TLF */
+/*RESPONSIVE ICONO TLF*/
 @media (min-width:1140px) {
     #toform {
         bottom: 40%;

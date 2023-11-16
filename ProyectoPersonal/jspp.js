@@ -21,7 +21,7 @@ let imagenElement = document.getElementById('imagen');
 let currentIndex = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Asegúrate de que esta función esté dentro del evento "DOMContentLoaded"
+  
   function mostrarImagen(index) {
     if (index >= 0 && index < imagenes.length) {
       imagenElement.src = imagenes[index];
